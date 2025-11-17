@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog - Breathe Safe | Asbestos Removal & Demolition Insights</title>
+  <meta name="description" content="Expert insights on asbestos removal, demolition safety, and Australian regulations. Stay informed with Breathe Safe's professional blog covering Gold Coast to Sunshine Coast.">
+  <meta name="keywords" content="asbestos removal blog, demolition safety, Australian asbestos regulations, Gold Coast asbestos, Sunshine Coast demolition, EPA compliance">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Blog - Breathe Safe | Asbestos Removal & Demolition Insights">
+  <meta property="og:description" content="Expert insights on asbestos removal, demolition safety, and Australian regulations from Gold Coast's trusted professionals.">
+  <meta property="og:image" content="assets/images/og-image.jpg">
+  <meta property="og:url" content="https://breathesafe.com.au/blog">
+  <meta property="og:type" content="website">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16.png">
+  
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/assets/css/all.min.css">
+
+    <!-- Font Awesome -->
+  <link 
+    rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" 
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" 
+  />
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'brand-red': '#E10600',
+            'brand-black': '#0C0C0C',
+            'brand-gray': '#1A1A1A',
+            'brand-light-gray': '#2A2A2A'
+          },
+          fontFamily: {
+            'inter': ['Inter', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, #0C0C0C 0%, #1A1A1A 100%);
+      color: white;
+    }
+    
+    .shadow-glow {
+      box-shadow: 0 0 20px rgba(225, 6, 0, 0.3);
+    }
+    
+    .gradient-text {
+      background: linear-gradient(135deg, #E10600 0%, #FF4444 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    
+    .blog-card {
+      background: linear-gradient(135deg, #1A1A1A 0%, #2A2A2A 100%);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      transition: all 0.3s ease;
+    }
+    
+    .blog-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 30px rgba(225, 6, 0, 0.2);
+      border-color: rgba(225, 6, 0, 0.3);
+    }
+    
+    .category-tag {
+      background: linear-gradient(135deg, #E10600 0%, #FF4444 100%);
+      color: white;
+      padding: 0.25rem 0.75rem;
+      border-radius: 9999px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    
+    .read-time {
+      color: #888;
+      font-size: 0.75rem;
+    }
+    
+    .author-info {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-top: 1rem;
+      padding-top: 1rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    .author-avatar {
+      width: 2rem;
+      height: 2rem;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #E10600 0%, #FF4444 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: 600;
+      font-size: 0.875rem;
+    }
+    
+    .featured-article {
+      background: linear-gradient(135deg, #E10600 0%, #FF4444 100%);
+      border-radius: 1rem;
+      overflow: hidden;
+      position: relative;
+    }
+    
+    .featured-content {
+      background: rgba(0, 0, 0, 0.7);
+      backdrop-filter: blur(10px);
+    }
+    
+    .search-box {
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 0.5rem;
+      padding: 0.75rem 1rem;
+      color: white;
+      width: 100%;
+    }
+    
+    .search-box::placeholder {
+      color: rgba(255, 255, 255, 0.6);
+    }
+    
+    .search-box:focus {
+      outline: none;
+      border-color: #E10600;
+      box-shadow: 0 0 0 2px rgba(225, 6, 0, 0.2);
+    }
+    
+    .sidebar-widget {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 0.75rem;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    
+    .mobile-menu {
+      transform: translateX(-100%);
+      background: rgba(12, 12, 12, 0.95);
+      transition: all 0.3s ease;
+    }
+    
+    @media (max-width: 768px) {
+      .mobile-menu.open {
+        transform: translateX(0);
+      }
+    }
+    
+    /* Professional Design Proportions CSS */
+    .hero-title {
+      font-size: 2.5rem !important;
+      line-height: 1.1 !important;
+      margin-bottom: 1rem !important;
+    }
+    
+    .section-title {
+      font-size: 1.875rem !important;
+      line-height: 1.2 !important;
+      margin-bottom: 0.75rem !important;
+    }
+    
+    .body-text {
+      font-size: 1rem !important;
+      line-height: 1.6 !important;
+    }
+    
+    .section-padding {
+      padding-top: 3rem !important;
+      padding-bottom: 3rem !important;
+    }
+    
+    .container-padding {
+      padding-left: 1.5rem !important;
+      padding-right: 1.5rem !important;
+    }
+    
+    .card-padding {
+      padding: 1.5rem !important;
+    }
+    
+    .btn-optimized {
+      padding: 0.75rem 1.5rem !important;
+      font-size: 0.875rem !important;
+      font-weight: 600 !important;
+    }
+    
+    @media (max-width: 768px) {
+      .hero-title {
+        font-size: 2rem !important;
+        margin-bottom: 0.75rem !important;
+      }
+      
+      .section-title {
+        font-size: 1.5rem !important;
+        margin-bottom: 0.5rem !important;
+      }
+      
+      .section-padding {
+        padding-top: 2rem !important;
+        padding-bottom: 2rem !important;
+      }
+      
+      .container-padding {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+      }
+      
+      .card-padding {
+        padding: 1rem !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Sticky Header -->
+  <header id="header" class="sticky top-0 z-50 transition-all duration-300 bg-brand-black/95 backdrop-blur-sm">
+    <nav class="container mx-auto container-padding py-4 flex items-center justify-between">
+      <div class="flex items-center space-x-3">
+        <img src="assets/images/logo_header_optimized.png" alt="Breathe Safe Logo" class="h-12 w-auto">
+        <div class="hidden md:block">
+          <h1 class="text-xl font-bold text-white">Breathe Safe</h1>
+          <p class="text-xs text-gray-300">Demolition & Asbestos Removal</p>
+        </div>
+      </div>
+      
+      <!-- Desktop Menu -->
+      <div class="hidden md:flex items-center space-x-6">
+        <a href="index.html" class="text-white hover:text-brand-red transition-colors font-medium">Home</a>
+        <a href="index.html#services" class="text-white hover:text-brand-red transition-colors font-medium">Services</a>
+        <a href="index.html#calculator" class="text-white hover:text-brand-red transition-colors font-medium">Calculator</a>
+        <a href="index.html#about" class="text-white hover:text-brand-red transition-colors font-medium">About</a>
+        <a href="index.html#projects" class="text-white hover:text-brand-red transition-colors font-medium">Projects</a>
+        <a href="index.html#reviews" class="text-white hover:text-brand-red transition-colors font-medium">Reviews</a>
+        <a href="blog.html" class="text-brand-red font-medium">Blog</a>
+        <a href="index.html#quote" class="bg-brand-red text-white px-6 py-2 rounded-full font-bold hover:bg-red-700 transition-colors shadow-glow btn-optimized">
+          Free Quote
+        </a>
+      </div>
+      
+      <!-- Mobile Menu Button -->
+      <button id="mobile-menu-btn" class="md:hidden text-white text-2xl">
+        <i class="fas fa-bars"></i>
+      </button>
+    </nav>
+    
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="mobile-menu fixed top-0 left-0 w-full h-full bg-brand-black z-40 md:hidden">
+      <div class="p-6">
+        <button id="mobile-menu-close" class="text-white text-2xl float-right">
+          <i class="fas fa-times"></i>
+        </button>
+        <div class="clear-both mt-8 space-y-6">
+          <a href="index.html" class="block text-white text-xl hover:text-brand-red transition-colors">Home</a>
+          <a href="index.html#services" class="block text-white text-xl hover:text-brand-red transition-colors">Services</a>
+          <a href="index.html#calculator" class="block text-white text-xl hover:text-brand-red transition-colors">Calculator</a>
+          <a href="index.html#about" class="block text-white text-xl hover:text-brand-red transition-colors">About</a>
+          <a href="index.html#projects" class="block text-white text-xl hover:text-brand-red transition-colors">Projects</a>
+          <a href="index.html#reviews" class="block text-white text-xl hover:text-brand-red transition-colors">Reviews</a>
+          <a href="blog.html" class="block text-brand-red text-xl font-medium">Blog</a>
+          <a href="index.html#quote" class="block bg-brand-red text-white px-6 py-3 rounded-full font-bold text-center mt-8">
+            Free Quote
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Blog Hero Section -->
+  <section class="section-padding bg-gradient-to-br from-brand-black via-brand-gray to-brand-black">
+    <div class="container mx-auto container-padding text-center">
+      <h1 class="hero-title font-bold gradient-text mb-4">
+        Expert Insights & Industry Knowledge
+      </h1>
+      <p class="body-text text-gray-300 max-w-2xl mx-auto mb-8">
+        Stay informed with the latest in asbestos removal, demolition safety, and Australian regulations. 
+        Professional insights from Gold Coast's trusted experts.
+      </p>
+      
+      <!-- Search Bar -->
+      <div class="max-w-md mx-auto">
+        <div class="relative">
+          <input type="text" placeholder="Search articles..." class="search-box pr-12">
+          <button class="absolute right-3 top-1/2 transform -translate-y-1/2 text-brand-red">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Article -->
+  <section class="section-padding">
+    <div class="container mx-auto container-padding">
+      <div class="featured-article mb-12">
+        <div class="grid md:grid-cols-2 gap-0">
+          <div class="relative">
+            <img src="assets/images/asbestos_removal_service.jpg" alt="Featured Article" class="w-full h-64 md:h-full object-cover">
+            <div class="absolute top-4 left-4">
+              <span class="category-tag">Featured</span>
+            </div>
+          </div>
+          <div class="featured-content p-8 flex flex-col justify-center">
+            <h2 class="text-2xl font-bold text-white mb-4">
+              Complete Guide to Asbestos Removal in Queensland 2024
+            </h2>
+            <p class="text-gray-200 mb-6 body-text">
+              Everything you need to know about safe asbestos removal, legal requirements, and choosing the right professionals for your Gold Coast property.
+            </p>
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-4">
+                <span class="read-time">
+                  <i class="fas fa-clock mr-1"></i> 8 min read
+                </span>
+                <span class="read-time">
+                  <i class="fas fa-calendar mr-1"></i> Dec 15, 2024
+                </span>
+              </div>
+              <a href="#" class="bg-white text-brand-red px-6 py-2 rounded-full font-bold hover:bg-gray-100 transition-colors btn-optimized">
+                Read More
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Grid -->
+  <section class="section-padding">
+    <div class="container mx-auto container-padding">
+      <div class="grid lg:grid-cols-3 gap-8">
+        
+        <!-- Main Content -->
+        <div class="lg:col-span-2">
+          <div class="grid md:grid-cols-2 gap-6">
+            
+            <!-- Article 1 -->
+            <article class="blog-card rounded-lg overflow-hidden">
+              <img src="assets/images/roof_asbestos_removal_male.jpg" alt="Asbestos Roof Removal" class="w-full h-48 object-cover">
+              <div class="card-padding">
+                <div class="flex items-center gap-2 mb-3">
+                  <span class="category-tag">Safety</span>
+                  <span class="read-time">5 min read</span>
+                </div>
+                <h3 class="text-lg font-bold text-white mb-3 hover:text-brand-red transition-colors cursor-pointer">
+                  Signs Your Roof Contains Asbestos: What Gold Coast Homeowners Need to Know
+                </h3>
+                <p class="text-gray-300 text-sm mb-4 body-text">
+                  Learn to identify potential asbestos in your roof materials and understand when professional removal is necessary for your family's safety.
+                </p>
+                <div class="author-info">
+                  <div class="author-avatar">BS</div>
+                  <div>
+                    <p class="text-white text-sm font-medium">Breathe Safe Team</p>
+                    <p class="text-gray-400 text-xs">Dec 10, 2024</p>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Article 2 -->
+            <article class="blog-card rounded-lg overflow-hidden">
+              <img src="assets/images/internal_stripout.jpg" alt="Demolition Safety" class="w-full h-48 object-cover">
+              <div class="card-padding">
+                <div class="flex items-center gap-2 mb-3">
+                  <span class="category-tag">Demolition</span>
+                  <span class="read-time">7 min read</span>
+                </div>
+                <h3 class="text-lg font-bold text-white mb-3 hover:text-brand-red transition-colors cursor-pointer">
+                  Safe Demolition Practices: EPA Compliance in Queensland
+                </h3>
+                <p class="text-gray-300 text-sm mb-4 body-text">
+                  Understanding EPA regulations and safety protocols for residential and commercial demolition projects across the Gold Coast region.
+                </p>
+                <div class="author-info">
+                  <div class="author-avatar">BS</div>
+                  <div>
+                    <p class="text-white text-sm font-medium">Breathe Safe Team</p>
+                    <p class="text-gray-400 text-xs">Dec 8, 2024</p>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Article 3 -->
+            <article class="blog-card rounded-lg overflow-hidden">
+              <img src="assets/images/floor_preparation_service.jpg" alt="Floor Preparation" class="w-full h-48 object-cover">
+              <div class="card-padding">
+                <div class="flex items-center gap-2 mb-3">
+                  <span class="category-tag">Renovation</span>
+                  <span class="read-time">6 min read</span>
+                </div>
+                <h3 class="text-lg font-bold text-white mb-3 hover:text-brand-red transition-colors cursor-pointer">
+                  Floor Preparation and Tile Removal: Best Practices for Renovation Projects
+                </h3>
+                <p class="text-gray-300 text-sm mb-4 body-text">
+                  Professional techniques for safe floor preparation, tile removal, and surface grinding for your Sunshine Coast renovation project.
+                </p>
+                <div class="author-info">
+                  <div class="author-avatar">BS</div>
+                  <div>
+                    <p class="text-white text-sm font-medium">Breathe Safe Team</p>
+                    <p class="text-gray-400 text-xs">Dec 5, 2024</p>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Article 4 -->
+            <article class="blog-card rounded-lg overflow-hidden">
+              <img src="assets/images/bathroom_before_clean.jpg" alt="Bathroom Renovation" class="w-full h-48 object-cover">
+              <div class="card-padding">
+                <div class="flex items-center gap-2 mb-3">
+                  <span class="category-tag">Residential</span>
+                  <span class="read-time">4 min read</span>
+                </div>
+                <h3 class="text-lg font-bold text-white mb-3 hover:text-brand-red transition-colors cursor-pointer">
+                  Bathroom Renovation Safety: Dealing with Asbestos in Older Homes
+                </h3>
+                <p class="text-gray-300 text-sm mb-4 body-text">
+                  Essential safety considerations when renovating bathrooms in pre-1990s homes, including asbestos identification and removal protocols.
+                </p>
+                <div class="author-info">
+                  <div class="author-avatar">BS</div>
+                  <div>
+                    <p class="text-white text-sm font-medium">Breathe Safe Team</p>
+                    <p class="text-gray-400 text-xs">Dec 3, 2024</p>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Article 5 -->
+            <article class="blog-card rounded-lg overflow-hidden">
+              <img src="assets/images/kitchen_before_clean.jpg" alt="Kitchen Demolition" class="w-full h-48 object-cover">
+              <div class="card-padding">
+                <div class="flex items-center gap-2 mb-3">
+                  <span class="category-tag">Commercial</span>
+                  <span class="read-time">9 min read</span>
+                </div>
+                <h3 class="text-lg font-bold text-white mb-3 hover:text-brand-red transition-colors cursor-pointer">
+                  Commercial Kitchen Strip-Out: Health and Safety Regulations
+                </h3>
+                <p class="text-gray-300 text-sm mb-4 body-text">
+                  Comprehensive guide to commercial kitchen demolition, including health department requirements and safety protocols for business owners.
+                </p>
+                <div class="author-info">
+                  <div class="author-avatar">BS</div>
+                  <div>
+                    <p class="text-white text-sm font-medium">Breathe Safe Team</p>
+                    <p class="text-gray-400 text-xs">Nov 30, 2024</p>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Article 6 -->
+            <article class="blog-card rounded-lg overflow-hidden">
+              <img src="assets/images/bedroom_demolished.jpg" alt="Strip Out Services" class="w-full h-48 object-cover">
+              <div class="card-padding">
+                <div class="flex items-center gap-2 mb-3">
+                  <span class="category-tag">Services</span>
+                  <span class="read-time">5 min read</span>
+                </div>
+                <h3 class="text-lg font-bold text-white mb-3 hover:text-brand-red transition-colors cursor-pointer">
+                  Complete Strip-Out Services: What's Included and Why It Matters
+                </h3>
+                <p class="text-gray-300 text-sm mb-4 body-text">
+                  Understanding the scope of professional strip-out services and how they prepare your property for renovation or redevelopment.
+                </p>
+                <div class="author-info">
+                  <div class="author-avatar">BS</div>
+                  <div>
+                    <p class="text-white text-sm font-medium">Breathe Safe Team</p>
+                    <p class="text-gray-400 text-xs">Nov 28, 2024</p>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+          </div>
+
+          <!-- Load More Button -->
+          <div class="text-center mt-12">
+            <button class="bg-brand-red text-white px-8 py-3 rounded-full font-bold hover:bg-red-700 transition-colors shadow-glow btn-optimized">
+              Load More Articles
+            </button>
+          </div>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="lg:col-span-1">
+          
+          <!-- Categories Widget -->
+          <div class="sidebar-widget">
+            <h3 class="section-title text-white mb-4">Categories</h3>
+            <div class="space-y-3">
+              <a href="#" class="flex items-center justify-between text-gray-300 hover:text-brand-red transition-colors">
+                <span>Asbestos Removal</span>
+                <span class="text-sm bg-brand-red text-white px-2 py-1 rounded">12</span>
+              </a>
+              <a href="#" class="flex items-center justify-between text-gray-300 hover:text-brand-red transition-colors">
+                <span>Demolition Safety</span>
+                <span class="text-sm bg-brand-red text-white px-2 py-1 rounded">8</span>
+              </a>
+              <a href="#" class="flex items-center justify-between text-gray-300 hover:text-brand-red transition-colors">
+                <span>Floor Preparation</span>
+                <span class="text-sm bg-brand-red text-white px-2 py-1 rounded">6</span>
+              </a>
+              <a href="#" class="flex items-center justify-between text-gray-300 hover:text-brand-red transition-colors">
+                <span>Regulations</span>
+                <span class="text-sm bg-brand-red text-white px-2 py-1 rounded">5</span>
+              </a>
+              <a href="#" class="flex items-center justify-between text-gray-300 hover:text-brand-red transition-colors">
+                <span>Renovation Tips</span>
+                <span class="text-sm bg-brand-red text-white px-2 py-1 rounded">4</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Recent Posts Widget -->
+          <div class="sidebar-widget">
+            <h3 class="section-title text-white mb-4">Recent Posts</h3>
+            <div class="space-y-4">
+              <div class="flex gap-3">
+                <img src="assets/images/hero_with_watermark.jpg" alt="Recent Post" class="w-16 h-16 object-cover rounded">
+                <div>
+                  <h4 class="text-white text-sm font-medium mb-1 hover:text-brand-red transition-colors cursor-pointer">
+                    Emergency Asbestos Response: What to Do
+                  </h4>
+                  <p class="text-gray-400 text-xs">Dec 12, 2024</p>
+                </div>
+              </div>
+              <div class="flex gap-3">
+                <img src="assets/images/manual_demolition.jpg" alt="Recent Post" class="w-16 h-16 object-cover rounded">
+                <div>
+                  <h4 class="text-white text-sm font-medium mb-1 hover:text-brand-red transition-colors cursor-pointer">
+                    Cost Factors in Professional Demolition
+                  </h4>
+                  <p class="text-gray-400 text-xs">Dec 9, 2024</p>
+                </div>
+              </div>
+              <div class="flex gap-3">
+                <img src="assets/images/gallery-1.jpg" alt="Recent Post" class="w-16 h-16 object-cover rounded">
+                <div>
+                  <h4 class="text-white text-sm font-medium mb-1 hover:text-brand-red transition-colors cursor-pointer">
+                    Choosing the Right Contractor
+                  </h4>
+                  <p class="text-gray-400 text-xs">Dec 6, 2024</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Newsletter Widget -->
+          <div class="sidebar-widget">
+            <h3 class="section-title text-white mb-4">Stay Updated</h3>
+            <p class="text-gray-300 text-sm mb-4 body-text">
+              Get the latest insights on asbestos removal and demolition safety delivered to your inbox.
+            </p>
+            <form class="space-y-3">
+              <input type="email" placeholder="Your email address" class="search-box">
+              <button type="submit" class="w-full bg-brand-red text-white py-2 rounded font-bold hover:bg-red-700 transition-colors btn-optimized">
+                Subscribe
+              </button>
+            </form>
+          </div>
+
+          <!-- Contact Widget -->
+          <div class="sidebar-widget">
+            <h3 class="section-title text-white mb-4">Need Expert Help?</h3>
+            <p class="text-gray-300 text-sm mb-4 body-text">
+              Get professional advice for your asbestos removal or demolition project.
+            </p>
+            <div class="space-y-3">
+              <a href="tel:+61432293589" class="flex items-center gap-3 text-white hover:text-brand-red transition-colors">
+                <i class="fas fa-phone text-brand-red"></i>
+                <span>(61) 432 293 589</span>
+              </a>
+              <a href="https://wa.me/61432293589" class="flex items-center gap-3 text-white hover:text-brand-red transition-colors">
+                <i class="fab fa-whatsapp text-brand-red"></i>
+                <span>WhatsApp Chat</span>
+              </a>
+              <a href="index.html#quote" class="block bg-brand-red text-white text-center py-2 rounded font-bold hover:bg-red-700 transition-colors btn-optimized">
+                Get Free Quote
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-brand-black section-padding border-t border-gray-800">
+    <div class="container mx-auto container-padding">
+      <div class="grid md:grid-cols-4 gap-8">
+        
+        <!-- Company Info -->
+        <div class="md:col-span-2">
+          <div class="flex items-center space-x-3 mb-4">
+            <img src="assets/images/logo_header_optimized.png" alt="Breathe Safe Logo" class="h-12 w-auto">
+            <div>
+              <h3 class="text-xl font-bold text-white">Breathe Safe</h3>
+              <p class="text-sm text-gray-300">Demolition & Asbestos Removal</p>
+            </div>
+          </div>
+          <p class="text-gray-300 mb-4 body-text">
+            Professional asbestos removal and demolition services across Gold Coast to Sunshine Coast. 
+            Licensed, insured, and committed to your safety.
+          </p>
+          <div class="flex space-x-4">
+            <a href="#" class="text-gray-400 hover:text-brand-red transition-colors">
+              <i class="fab fa-facebook-f text-xl"></i>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-brand-red transition-colors">
+              <i class="fab fa-instagram text-xl"></i>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-brand-red transition-colors">
+              <i class="fab fa-linkedin-in text-xl"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="text-lg font-bold text-white mb-4">Quick Links</h4>
+          <ul class="space-y-2">
+            <li><a href="index.html" class="text-gray-300 hover:text-brand-red transition-colors">Home</a></li>
+            <li><a href="index.html#services" class="text-gray-300 hover:text-brand-red transition-colors">Services</a></li>
+            <li><a href="index.html#about" class="text-gray-300 hover:text-brand-red transition-colors">About</a></li>
+            <li><a href="index.html#projects" class="text-gray-300 hover:text-brand-red transition-colors">Projects</a></li>
+            <li><a href="blog.html" class="text-gray-300 hover:text-brand-red transition-colors">Blog</a></li>
+            <li><a href="index.html#quote" class="text-gray-300 hover:text-brand-red transition-colors">Free Quote</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div>
+          <h4 class="text-lg font-bold text-white mb-4">Contact</h4>
+          <ul class="space-y-2">
+            <li class="flex items-center space-x-2">
+              <i class="fas fa-phone text-brand-red"></i>
+              <span class="text-gray-300">(61) 432 293 589</span>
+            </li>
+            <li class="flex items-center space-x-2">
+              <i class="fas fa-envelope text-brand-red"></i>
+              <span class="text-gray-300">info@breathesafe.com.au</span>
+            </li>
+            <li class="flex items-center space-x-2">
+              <i class="fas fa-map-marker-alt text-brand-red"></i>
+              <span class="text-gray-300">Gold Coast, QLD</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+        <p class="text-gray-400 text-sm">
+          © 2024 Breathe Safe Demolition and Asbestos Removal. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Float Button -->
+  <a href="https://wa.me/61432293589?text=Hello!%20I%20would%20like%20to%20request%20a%20quote%20for%20asbestos%20removal/demolition" 
+     class="fixed bottom-6 right-6 bg-green-500 text-white rounded-full w-14 h-14 flex items-center justify-center shadow-lg hover:bg-green-600 transition-colors z-50" 
+     aria-label="Contact us on WhatsApp">
+    <i class="fab fa-whatsapp text-2xl"></i>
+  </a>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" class="fixed bottom-24 right-6 bg-brand-red text-white rounded-full w-12 h-12 flex items-center justify-center shadow-lg hover:bg-red-700 transition-all opacity-0 invisible z-40">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script>
+    // Mobile Menu Toggle
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const mobileMenuClose = document.getElementById('mobile-menu-close');
+
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.add('open');
+    });
+
+    mobileMenuClose.addEventListener('click', () => {
+      mobileMenu.classList.remove('open');
+    });
+
+    // Close mobile menu when clicking on links
+    mobileMenu.addEventListener('click', (e) => {
+      if (e.target.tagName === 'A') {
+        mobileMenu.classList.remove('open');
+      }
+    });
+
+    // Back to Top Button
+    const backToTopBtn = document.getElementById('back-to-top');
+    
+    window.addEventListener('scroll', () => {
+      if (window.pageYOffset > 300) {
+        backToTopBtn.classList.remove('opacity-0', 'invisible');
+        backToTopBtn.classList.add('opacity-100', 'visible');
+      } else {
+        backToTopBtn.classList.add('opacity-0', 'invisible');
+        backToTopBtn.classList.remove('opacity-100', 'visible');
+      }
+    });
+
+    backToTopBtn.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+
+    // Search Functionality
+    const searchInput = document.querySelector('.search-box');
+    searchInput.addEventListener('keypress', (e) => {
+      if (e.key === 'Enter') {
+        e.preventDefault();
+        // Implement search functionality here
+        console.log('Searching for:', e.target.value);
+      }
+    });
+
+    // Newsletter Subscription
+    const newsletterForm = document.querySelector('form');
+    if (newsletterForm) {
+      newsletterForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const email = e.target.querySelector('input[type="email"]').value;
+        // Implement newsletter subscription here
+        alert('Thank you for subscribing! We\'ll keep you updated with the latest insights.');
+        e.target.reset();
+      });
+    }
+
+    // Article Click Tracking
+    document.querySelectorAll('.blog-card h3').forEach(title => {
+      title.addEventListener('click', () => {
+        // Implement article navigation here
+        console.log('Article clicked:', title.textContent);
+      });
+    });
+  </script>
+</body>
+</html>
+

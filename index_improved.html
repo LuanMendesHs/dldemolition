@@ -1,0 +1,2166 @@
+<!DOCTYPE html>
+<html lang="en-AU" class="scroll-smooth">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Breath Safe | Demolition & Asbestos Removal - Gold Coast to Sunshine Coast</title>
+  <meta name="description" content="Licensed asbestos removal specialists and demolition experts. Serving Gold Coast to Sunshine Coast. Free quotes and rapid response!" />
+  <meta name="keywords" content="asbestos removal, demolition, floor grinding, tile removal, strip out, Gold Coast, Sunshine Coast, Brisbane, asbestos abatement" />
+  <meta name="robots" content="index,follow" />
+  <meta name="theme-color" content="#e10600" />
+  <link rel="canonical" href="https://breathesafe.com.au/" />
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon_icon.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon_icon.png" />
+  <link rel="apple-touch-icon" href="assets/images/logo_symbol_only.png" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Breath Safe - Professional Demolition & Asbestos Removal" />
+  <meta property="og:description" content="Licensed specialists with 100+ completed projects. Free quotes within 24 hours!" />
+  <meta property="og:image" content="assets/images/og-image.jpg" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_AU" />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { 
+            brand: {
+              black: '#0c0c0c', 
+              red: '#e10600', 
+              white: '#ffffff', 
+              gray: '#111216', 
+              green: '#25D366',
+              lightgray: '#f8f9fa',
+              orange: '#FF6B35'
+            } 
+          },
+          boxShadow: { 
+            soft: '0 10px 25px rgba(0,0,0,.15)',
+            glow: '0 0 20px rgba(225, 6, 0, 0.3)',
+            'glow-orange': '0 0 20px rgba(255, 107, 53, 0.4)'
+          },
+          animation: {
+            'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+            'bounce-slow': 'bounce 2s infinite',
+            'fade-in': 'fadeIn 0.6s ease-out',
+            'slide-up': 'slideUp 0.8s ease-out',
+            'float': 'float 3s ease-in-out infinite'
+          },
+          keyframes: {
+            fadeIn: {
+              '0%': { opacity: '0', transform: 'translateY(20px)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' }
+            },
+            slideUp: {
+              '0%': { opacity: '0', transform: 'translateY(40px)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' }
+            },
+            float: {
+              '0%, 100%': { transform: 'translateY(0px)' },
+              '50%': { transform: 'translateY(-10px)' }
+            }
+          }
+        }
+      }
+    }
+  </script>
+  
+  <!-- Font Awesome -->
+  <link 
+    rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" 
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" 
+  />
+  
+  <!-- Custom Styles -->
+  <style>
+    .glass {
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+    }
+    
+    .gradient-text {
+      background: linear-gradient(135deg, #e10600, #ff6b35);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    
+    .service-card {
+      transition: all 0.3s ease;
+    }
+    
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 40px rgba(225, 6, 0, 0.2);
+    }
+    
+    .testimonial-card {
+      background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05));
+      backdrop-filter: blur(10px);
+      transition: all 0.3s ease;
+    }
+    
+    .testimonial-card:hover {
+      transform: translateY(-3px);
+      background: linear-gradient(135deg, rgba(255,255,255,0.15), rgba(255,255,255,0.08));
+    }
+
+    .upload-area {
+      border: 2px dashed rgba(255, 255, 255, 0.3);
+      transition: all 0.3s ease;
+    }
+    
+    .upload-area:hover {
+      border-color: #e10600;
+      background: rgba(225, 6, 0, 0.05);
+    }
+    
+    .upload-area.dragover {
+      border-color: #e10600;
+      background: rgba(225, 6, 0, 0.1);
+    }
+
+    .floating-whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 1000;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    .back-to-top {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      z-index: 999;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s ease;
+    }
+
+    .back-to-top.visible {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .cta-button {
+      background: linear-gradient(135deg, #e10600, #ff6b35);
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cta-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px rgba(225, 6, 0, 0.4);
+    }
+
+    .cta-button::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+      transition: left 0.5s;
+    }
+
+    .cta-button:hover::before {
+      left: 100%;
+    }
+
+    .success-message {
+      display: none;
+      background: linear-gradient(135deg, #10b981, #059669);
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      animation: fadeIn 0.5s ease-out;
+    }
+
+    .error-message {
+      background: linear-gradient(135deg, #ef4444, #dc2626);
+      border: 1px solid rgba(239, 68, 68, 0.3);
+    }
+
+    @media (max-width: 768px) {
+      .floating-whatsapp {
+        bottom: 15px;
+        right: 15px;
+        width: 50px;
+        height: 50px;
+      }
+      
+      .back-to-top {
+        bottom: 15px;
+        left: 15px;
+        width: 45px;
+        height: 45px;
+      }
+    }
+  </style>
+
+  <!-- Schema Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Breath Safe Demolition & Asbestos Removal",
+    "description": "Licensed asbestos removal specialists and demolition experts",
+    "url": "https://breathesafe.com.au",
+    "telephone": "+61432293589",
+    "email": "hello@dldemolition.com.au",
+    "address": {
+      "@type": "PostalAddress",
+      "addressRegion": "Queensland",
+      "addressCountry": "AU"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -28.0167,
+      "longitude": 153.4000
+    },
+    "areaServed": [
+      "Gold Coast",
+      "Sunshine Coast",
+      "Brisbane",
+      "Queensland"
+    ],
+    "serviceType": [
+      "Asbestos Removal",
+      "Demolition",
+      "Floor Grinding",
+      "Tile Removal",
+      "Strip Out"
+    ],
+    "priceRange": "$$",
+    "openingHours": "Mo-Fr 07:00-18:00, Sa 08:00-16:00",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.7",
+      "reviewCount": "85"
+    }
+  }
+  </script>
+</head>
+
+<body class="bg-brand-black text-white font-sans">
+  
+  <!-- Emergency Banner -->
+  <div class="bg-brand-red text-white py-2 text-center text-sm font-semibold">
+    <i class="fas fa-exclamation-triangle mr-2"></i>
+    EMERGENCY 24/7 - Response within 2 hours across the region!
+    <div class="float-right mr-4">
+      <a href="tel:+61432293589" class="hover:underline">
+        <i class="fas fa-phone mr-1"></i>
+        Call Now
+      </a>
+      <span class="mx-2">|</span>
+      <a href="https://wa.me/61432293589" class="hover:underline">
+        <i class="fab fa-whatsapp mr-1"></i>
+        WhatsApp
+      </a>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-brand-black/95 glass border-b border-white/10">
+    <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <img src="assets/images/logo_symbol_only.png" alt="Breath Safe Logo" class="w-12 h-12 object-contain">
+        <div>
+          <h1 class="font-bold text-xl gradient-text">Breath Safe</h1>
+          <p class="text-xs text-gray-400">Demolition & Asbestos Removal</p>
+        </div>
+      </div>
+      
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:flex items-center gap-8">
+        <a href="#home" class="hover:text-brand-red transition-colors">Home</a>
+        <a href="#services" class="hover:text-brand-red transition-colors">Services</a>
+        <a href="#about" class="hover:text-brand-red transition-colors">About</a>
+        <a href="#projects" class="hover:text-brand-red transition-colors">Projects</a>
+        <a href="#testimonials" class="hover:text-brand-red transition-colors">Reviews</a>
+        <a href="#contact" class="cta-button px-6 py-2 rounded-full font-semibold text-sm">
+          Free Quote
+        </a>
+      </nav>
+      
+      <!-- Mobile Menu Button -->
+      <button class="md:hidden text-2xl" onclick="toggleMobileMenu()">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+    
+    <!-- Mobile Navigation -->
+    <div id="mobile-menu" class="hidden md:hidden bg-brand-black/95 border-t border-white/10">
+      <div class="container mx-auto px-4 py-4 space-y-4">
+        <a href="#home" class="block hover:text-brand-red transition-colors">Home</a>
+        <a href="#services" class="block hover:text-brand-red transition-colors">Services</a>
+        <a href="#about" class="block hover:text-brand-red transition-colors">About</a>
+        <a href="#projects" class="block hover:text-brand-red transition-colors">Projects</a>
+        <a href="#testimonials" class="block hover:text-brand-red transition-colors">Reviews</a>
+        <a href="#contact" class="block cta-button px-6 py-2 rounded-full font-semibold text-center">
+          Free Quote
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="relative min-h-screen flex items-center bg-gradient-to-br from-brand-black via-brand-gray to-brand-black">
+    <div class="absolute inset-0 bg-[url('assets/images/hero.jpg')] bg-cover bg-center opacity-20"></div>
+    <div class="absolute inset-0 bg-gradient-to-r from-brand-black/90 to-transparent"></div>
+    
+    <div class="container mx-auto px-4 relative z-10">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        
+        <!-- Hero Content -->
+        <div class="animate-fade-in">
+          <div class="inline-flex items-center gap-2 bg-brand-red/20 border border-brand-red/30 rounded-full px-4 py-2 mb-6">
+            <i class="fas fa-shield-alt text-brand-red"></i>
+            <span class="text-sm font-semibold">Licensed • Insured • Certified</span>
+          </div>
+          
+          <h1 class="text-5xl lg:text-7xl font-black mb-6 leading-tight">
+            <span class="text-brand-red">Asbestos Removal</span><br>
+            <span class="text-white">&</span><br>
+            <span class="text-white">Demolition</span>
+          </h1>
+          
+          <p class="text-xl text-gray-300 mb-8 leading-relaxed">
+            Licensed specialists with <span class="text-brand-red font-bold">in Abestos Removal</span>. 
+            Serving Gold Coast to Sunshine Coast with <span class="text-brand-red font-bold">free quotes within 24 hours</span>.
+          </p>
+          
+          <div class="flex flex-col sm:flex-row gap-4 mb-8">
+            <a href="#contact" class="cta-button px-8 py-4 rounded-full font-semibold text-lg text-center">
+              <i class="fas fa-calculator mr-2"></i>
+              Free Quote
+            </a>
+            <a href="tel:+61432293589" class="border-2 border-white/30 hover:border-brand-red px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 text-center hover:bg-brand-red/10">
+              <i class="fas fa-phone mr-2"></i>
+              (61) 432 293 589
+            </a>
+          </div>
+          
+          <div class="grid grid-cols-3 gap-4 text-center">
+            <div class="bg-white/5 backdrop-blur-sm rounded-lg p-4">
+              <div class="text-2xl font-bold text-brand-red">100+</div>
+              <div class="text-sm text-gray-400">Projects</div>
+            </div>
+            <div class="bg-white/5 backdrop-blur-sm rounded-lg p-4">
+              <div class="text-2xl font-bold text-brand-red">24h</div>
+              <div class="text-sm text-gray-400">Response</div>
+            </div>
+            <div class="bg-white/5 backdrop-blur-sm rounded-lg p-4">
+              <div class="text-2xl font-bold text-brand-red">100%</div>
+              <div class="text-sm text-gray-400">Licensed</div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Enhanced Quick Quote Form -->
+        <div class="animate-slide-up">
+          <div class="bg-white/10 glass rounded-2xl p-8 shadow-2xl border border-white/20">
+            <div class="text-center mb-6">
+              <h2 class="text-2xl font-bold mb-2">Quick Quote</h2>
+              <p class="text-gray-300">Guaranteed response within 24 hours</p>
+            </div>
+            
+            <!-- Success Message -->
+            <div id="success-message" class="success-message rounded-lg p-4 mb-6">
+              <div class="flex items-center">
+                <i class="fas fa-check-circle text-2xl mr-3"></i>
+                <div>
+                  <h3 class="font-bold">Thank you!</h3>
+                  <p class="text-sm">We'll respond within 24 hours with your quote.</p>
+                </div>
+              </div>
+            </div>
+            
+            <form id="enhanced-quote-form" class="space-y-4">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                  <label for="name" class="block text-sm font-medium mb-1">Full Name *</label>
+                  <input type="text" id="name" name="name" required 
+                         placeholder="e.g. John Smith" 
+                         class="w-full bg-black/40 border border-white/20 rounded-lg px-4 py-3 focus:border-brand-red focus:outline-none transition-colors"
+                         aria-describedby="name-error">
+                  <div id="name-error" class="text-red-400 text-xs mt-1 hidden"></div>
+                </div>
+                <div>
+                  <label for="phone" class="block text-sm font-medium mb-1">Phone Number *</label>
+                  <input type="tel" id="phone" name="phone" required 
+                         placeholder="e.g. 0412 345 678" 
+                         class="w-full bg-black/40 border border-white/20 rounded-lg px-4 py-3 focus:border-brand-red focus:outline-none transition-colors"
+                         aria-describedby="phone-error">
+                  <div id="phone-error" class="text-red-400 text-xs mt-1 hidden"></div>
+                </div>
+              </div>
+              
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                  <label for="email" class="block text-sm font-medium mb-1">Email Address</label>
+                  <input type="email" id="email" name="email" 
+                         placeholder="e.g. john@email.com" 
+                         class="w-full bg-black/40 border border-white/20 rounded-lg px-4 py-3 focus:border-brand-red focus:outline-none transition-colors">
+                </div>
+                <div>
+                  <label for="suburb" class="block text-sm font-medium mb-1">Suburb/Location</label>
+                  <input type="text" id="suburb" name="suburb" 
+                         placeholder="e.g. Surfers Paradise" 
+                         class="w-full bg-black/40 border border-white/20 rounded-lg px-4 py-3 focus:border-brand-red focus:outline-none transition-colors">
+                </div>
+              </div>
+              
+              <div>
+                <label for="service" class="block text-sm font-medium mb-1">Service Required *</label>
+                <select id="service" name="service" required 
+                        class="w-full bg-black/40 border border-white/20 rounded-lg px-4 py-3 focus:border-brand-red focus:outline-none transition-colors"
+                        aria-describedby="service-error">
+                  <option value="">Choose the service you need</option>
+                  <option value="asbestos-removal">Asbestos Removal</option>
+                  <option value="demolition">Demolition</option>
+                  <option value="floor-grinding">Floor Grinding</option>
+                  <option value="tile-removal">Tile Removal</option>
+                  <option value="strip-out">Strip Out</option>
+                  <option value="other">Other</option>
+                </select>
+                <div id="service-error" class="text-red-400 text-xs mt-1 hidden"></div>
+              </div>
+              
+              <div>
+                <label for="message" class="block text-sm font-medium mb-1">Project Description</label>
+                <textarea id="message" name="message" rows="3" 
+                          placeholder="Describe your project, timeline, and any specific requirements..." 
+                          class="w-full bg-black/40 border border-white/20 rounded-lg px-4 py-3 focus:border-brand-red focus:outline-none transition-colors resize-none"></textarea>
+              </div>
+              
+              <!-- Image Upload Section -->
+              <div>
+                <label class="block text-sm font-medium mb-2">
+                  <i class="fas fa-camera mr-1"></i>
+                  Upload Project Images (Optional)
+                </label>
+                <div class="upload-area rounded-lg p-6 text-center cursor-pointer" onclick="document.getElementById('file-input').click()">
+                  <input type="file" id="file-input" name="images" multiple accept="image/jpeg,image/png" class="hidden" onchange="handleFileSelect(event)">
+                  <i class="fas fa-cloud-upload-alt text-3xl text-gray-400 mb-2"></i>
+                  <p class="text-sm text-gray-300 mb-1">Click to upload or drag & drop</p>
+                  <p class="text-xs text-gray-400">JPEG/PNG up to 5MB each. Multiple angles recommended.</p>
+                </div>
+                <div id="file-list" class="mt-2 space-y-1"></div>
+              </div>
+              
+              <button type="submit" 
+                      class="w-full cta-button py-4 rounded-lg font-bold text-lg transition-all duration-300">
+                <i class="fas fa-paper-plane mr-2"></i>
+                Request Free Quote
+              </button>
+              
+              <div class="flex items-start gap-3">
+                <input type="checkbox" id="terms" name="terms" required 
+                       class="mt-1 w-4 h-4 text-brand-red bg-black/40 border-white/20 rounded focus:ring-brand-red">
+                <label for="terms" class="text-sm text-gray-300">
+                  I agree to be contacted by Breath Safe for project discussion and quotation. 
+                  Your information is secure with us.
+                </label>
+              </div>
+              
+              <p class="text-xs text-gray-400 text-center">
+                <i class="fas fa-lock mr-1"></i>
+                Your information is secure with us
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust Badges -->
+  <section class="bg-brand-gray border-y border-white/10 py-8">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-2 md:grid-cols-6 gap-6 text-center">
+        <div class="bg-black/30 rounded-lg p-4 hover:bg-black/40 transition-colors">
+          <i class="fas fa-award text-yellow-500 text-2xl mb-2"></i>
+          <div class="text-sm font-semibold">Award Winning</div>
+        </div>
+        <div class="bg-black/30 rounded-lg p-4 hover:bg-black/40 transition-colors">
+          <img src="assets/images/epa_logo.png" alt="EPA Compliant" class="w-8 h-8 mx-auto mb-2">
+          <div class="text-sm font-semibold">EPA Compliant</div>
+        </div>
+        <div class="bg-black/30 rounded-lg p-4 hover:bg-black/40 transition-colors">
+          <img src="assets/images/insurance_logo.png" alt="Fully Insured" class="w-8 h-8 mx-auto mb-2">
+          <div class="text-sm font-semibold">Fully Insured</div>
+        </div>
+        <div class="bg-black/30 rounded-lg p-4 hover:bg-black/40 transition-colors">
+          <img src="assets/images/swms_logo.png" alt="SWMS Certified" class="w-8 h-8 mx-auto mb-2">
+          <div class="text-sm font-semibold">SWMS Certified</div>
+        </div>
+        <div class="bg-black/30 rounded-lg p-4 hover:bg-black/40 transition-colors">
+          <i class="fas fa-recycle text-green-400 text-2xl mb-2"></i>
+          <div class="text-sm font-semibold">Legal Disposal</div>
+        </div>
+        <div class="bg-black/30 rounded-lg p-4 hover:bg-black/40 transition-colors">
+          <i class="fas fa-clock text-brand-red text-2xl mb-2"></i>
+          <div class="text-sm font-semibold">24/7 Emergency</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/61432293589?text=Hello!%20I%20would%20like%20to%20request%20a%20quote%20for%20asbestos%20removal/demolition" 
+     class="floating-whatsapp bg-brand-green hover:bg-green-600 text-white rounded-full w-16 h-16 flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300"
+     target="_blank"
+     aria-label="Contact us on WhatsApp">
+    <i class="fab fa-whatsapp text-2xl"></i>
+  </a>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" 
+          class="back-to-top bg-brand-red hover:bg-red-700 text-white rounded-full w-12 h-12 flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300"
+          onclick="scrollToTop()"
+          aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- JavaScript -->
+  <script>
+    // Mobile Menu Toggle
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');
+    }
+
+    // File Upload Handling
+    function handleFileSelect(event) {
+      const files = event.target.files;
+      const fileList = document.getElementById('file-list');
+      fileList.innerHTML = '';
+      
+      for (let i = 0; i < files.length; i++) {
+        const file = files[i];
+        if (file.size > 5 * 1024 * 1024) {
+          alert(`File ${file.name} is too large. Maximum size is 5MB.`);
+          continue;
+        }
+        
+        const fileItem = document.createElement('div');
+        fileItem.className = 'flex items-center justify-between bg-black/20 rounded px-3 py-2 text-sm';
+        fileItem.innerHTML = `
+          <span><i class="fas fa-image mr-2"></i>${file.name}</span>
+          <span class="text-gray-400">${(file.size / 1024 / 1024).toFixed(1)}MB</span>
+        `;
+        fileList.appendChild(fileItem);
+      }
+    }
+
+    // Drag and Drop
+    const uploadArea = document.querySelector('.upload-area');
+    
+    uploadArea.addEventListener('dragover', (e) => {
+      e.preventDefault();
+      uploadArea.classList.add('dragover');
+    });
+    
+    uploadArea.addEventListener('dragleave', () => {
+      uploadArea.classList.remove('dragover');
+    });
+    
+    uploadArea.addEventListener('drop', (e) => {
+      e.preventDefault();
+      uploadArea.classList.remove('dragover');
+      const files = e.dataTransfer.files;
+      document.getElementById('file-input').files = files;
+      handleFileSelect({ target: { files } });
+    });
+
+    // Form Validation and Submission
+    document.getElementById('enhanced-quote-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      // Clear previous errors
+      document.querySelectorAll('.text-red-400').forEach(el => el.classList.add('hidden'));
+      document.querySelectorAll('input, select').forEach(el => el.classList.remove('border-red-500'));
+      
+      let isValid = true;
+      
+      // Validate required fields
+      const name = document.getElementById('name');
+      const phone = document.getElementById('phone');
+      const service = document.getElementById('service');
+      
+      if (!name.value.trim()) {
+        showError('name-error', 'Please enter your full name');
+        name.classList.add('border-red-500');
+        isValid = false;
+      }
+      
+      if (!phone.value.trim()) {
+        showError('phone-error', 'Please enter your phone number');
+        phone.classList.add('border-red-500');
+        isValid = false;
+      }
+      
+      if (!service.value) {
+        showError('service-error', 'Please select a service');
+        service.classList.add('border-red-500');
+        isValid = false;
+      }
+      
+      if (isValid) {
+        // Show success message
+        document.getElementById('success-message').style.display = 'block';
+        this.style.display = 'none';
+        
+        // Scroll to success message
+        document.getElementById('success-message').scrollIntoView({ 
+          behavior: 'smooth', 
+          block: 'center' 
+        });
+        
+        // Here you would normally send the form data to your server
+        console.log('Form submitted successfully');
+      }
+    });
+    
+    function showError(elementId, message) {
+      const errorElement = document.getElementById(elementId);
+      errorElement.textContent = message;
+      errorElement.classList.remove('hidden');
+    }
+
+    // Back to Top Button
+    window.addEventListener('scroll', function() {
+      const backToTop = document.getElementById('back-to-top');
+      if (window.pageYOffset > 300) {
+        backToTop.classList.add('visible');
+      } else {
+        backToTop.classList.remove('visible');
+      }
+    });
+    
+    function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    }
+
+    // Smooth Scrolling for Navigation Links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
+
+
+
+  <!-- Services Section -->
+  <section id="services" class="py-20 bg-gradient-to-b from-brand-gray to-brand-black">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl lg:text-5xl font-bold mb-6">
+          <span class="gradient-text">Our Services</span>
+        </h2>
+        <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+          Specialists in safe asbestos removal, professional demolition and floor preparation. 
+          All services come with full warranty and certification.
+        </p>
+      </div>
+      
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Asbestos Removal -->
+        <div class="service-card bg-white/5 glass rounded-2xl p-8 border border-white/10">
+          <div class="mb-6">
+            <img src="assets/images/asbestos_removal.jpg" alt="Asbestos Removal" 
+                 class="w-full h-48 object-cover rounded-lg mb-4">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="bg-brand-red/20 p-3 rounded-lg">
+                <i class="fas fa-hard-hat text-brand-red text-2xl"></i>
+              </div>
+              <h3 class="text-2xl font-bold">Asbestos Removal</h3>
+            </div>
+          </div>
+          
+          <p class="text-gray-300 mb-6">
+            Safe and licensed asbestos removal from roofs, walls, floors and structures. 
+            We follow all Australian safety protocols and regulations.
+          </p>
+          
+          <ul class="space-y-2 mb-8">
+            <li class="flex items-center gap-2">
+              <i class="fas fa-check text-brand-red"></i>
+              <span class="text-sm">Class A & B certified</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <i class="fas fa-check text-brand-red"></i>
+              <span class="text-sm">Air monitoring</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <i class="fas fa-check text-brand-red"></i>
+              <span class="text-sm">Clearance certificates</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <i class="fas fa-check text-brand-red"></i>
+              <span class="text-sm">Legal disposal guaranteed</span>
+            </li>
+          </ul>
+          
+          <a href="#contact" class="cta-button w-full py-3 rounded-lg font-semibold text-center block">
+            Request Quote
+          </a>
+        </div>
+        
+        <!-- Demolition -->
+        <div class="service-card bg-white/5 glass rounded-2xl p-8 border border-white/10">
+          <div class="mb-6">
+            <img src="assets/images/internal_stripout.jpg" alt="Demolition" 
+                 class="w-full h-48 object-cover rounded-lg mb-4">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="bg-brand-red/20 p-3 rounded-lg">
+                <i class="fas fa-hammer text-brand-red text-2xl"></i>
+              </div>
+              <h3 class="text-2xl font-bold">Demolition</h3>
+            </div>
+          </div>
+          
+          <p class="text-gray-300 mb-6">
+            Controlled demolition of residential and commercial structures. 
+            Internal strip-out, garages, sheds and site preparation.
+          </p>
+          
+          <ul class="space-y-2 mb-8">
+            <li class="flex items-center gap-2">
+              <i class="fas fa-check text-brand-red"></i>
+              <span class="text-sm">Controlled demolition</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <i class="fas fa-check text-brand-red"></i>
+              <span class="text-sm">Internal strip-out</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <i class="fas fa-check text-brand-red"></i>
+              <span class="text-sm">Waste separation</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <i class="fas fa-check text-brand-red"></i>
+              <span class="text-sm">Complete clean-up</span>
+            </li>
+          </ul>
+          
+          <a href="#contact" class="cta-button w-full py-3 rounded-lg font-semibold text-center block">
+            Request Quote
+          </a>
+        </div>
+        
+        <!-- Floor Preparation -->
+        <div class="service-card bg-white/5 glass rounded-2xl p-8 border border-white/10">
+          <div class="mb-6">
+            <img src="assets/images/floor_preparation.jpg" alt="Floor Preparation" 
+                 class="w-full h-48 object-cover rounded-lg mb-4">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="bg-brand-red/20 p-3 rounded-lg">
+                <i class="fas fa-tools text-brand-red text-2xl"></i>
+              </div>
+              <h3 class="text-2xl font-bold">Floor Preparation</h3>
+            </div>
+          </div>
+          
+          <p class="text-gray-300 mb-6">
+            Grinding, polishing and preparation of concrete floors. 
+            Removal of tiles, carpets and old floor coverings.
+          </p>
+          
+          <ul class="space-y-2 mb-8">
+            <li class="flex items-center gap-2">
+              <i class="fas fa-check text-brand-red"></i>
+              <span class="text-sm">Concrete grinding</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <i class="fas fa-check text-brand-red"></i>
+              <span class="text-sm">Tile removal</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <i class="fas fa-check text-brand-red"></i>
+              <span class="text-sm">Surface preparation</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <i class="fas fa-check text-brand-red"></i>
+              <span class="text-sm">Professional finish</span>
+            </li>
+          </ul>
+          
+          <a href="#contact" class="cta-button w-full py-3 rounded-lg font-semibold text-center block">
+            Request Quote
+          </a>
+        </div>
+      </div>
+      
+      <!-- CTA Section -->
+      <div class="text-center mt-16">
+        <div class="bg-white/5 glass rounded-2xl p-8 border border-white/10 max-w-2xl mx-auto">
+          <h3 class="text-2xl font-bold mb-4">Need a Custom Quote?</h3>
+          <p class="text-gray-300 mb-6">
+            Every project is unique. Get a personalized quote within 24 hours.
+          </p>
+          <a href="#contact" class="cta-button px-8 py-4 rounded-lg font-semibold text-lg">
+            <i class="fas fa-calculator mr-2"></i>
+            Free Quote
+          </a>
+          <p class="text-sm text-gray-400 mt-4">Guaranteed response within 24 hours</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-20 bg-brand-black">
+    <div class="container mx-auto px-4">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        
+        <!-- About Content -->
+        <div>
+          <h2 class="text-4xl lg:text-5xl font-bold mb-6">
+            About <span class="gradient-text">Breath Safe</span>
+          </h2>
+          
+          <p class="text-xl text-gray-300 mb-8 leading-relaxed">
+            With over 10 years of experience, we are licensed specialists in asbestos removal and demolition, 
+            serving the entire Gold Coast to Sunshine Coast region with excellence and safety.
+          </p>
+          
+          <div class="grid md:grid-cols-2 gap-8 mb-8">
+            <div class="bg-white/5 glass rounded-lg p-6 border border-white/10">
+              <div class="flex items-center gap-3 mb-4">
+                <i class="fas fa-award text-yellow-500 text-2xl"></i>
+                <h3 class="text-xl font-bold">Award Winning Service</h3>
+              </div>
+              <p class="text-gray-300 text-sm">
+                Recognised for excellence in asbestos removal and demolition services
+              </p>
+            </div>
+            
+            <div class="bg-white/5 glass rounded-lg p-6 border border-white/10">
+              <div class="flex items-center gap-3 mb-4">
+                <i class="fas fa-shield-alt text-blue-500 text-2xl"></i>
+                <h3 class="text-xl font-bold">Fully Insured</h3>
+              </div>
+              <p class="text-gray-300 text-sm">
+                $20 million public liability insurance for your complete peace of mind
+              </p>
+            </div>
+            
+            <div class="bg-white/5 glass rounded-lg p-6 border border-white/10">
+              <div class="flex items-center gap-3 mb-4">
+                <i class="fas fa-users text-green-500 text-2xl"></i>
+                <h3 class="text-xl font-bold">Experienced Team</h3>
+              </div>
+              <p class="text-gray-300 text-sm">
+                Over 100 successfully completed projects with zero recorded accidents
+              </p>
+            </div>
+            
+            <div class="bg-white/5 glass rounded-lg p-6 border border-white/10">
+              <div class="flex items-center gap-3 mb-4">
+                <i class="fas fa-certificate text-purple-500 text-2xl"></i>
+                <h3 class="text-xl font-bold">Quality Guarantee</h3>
+              </div>
+              <p class="text-gray-300 text-sm">
+                All work comes with 12-month warranty and clearance certificate
+              </p>
+            </div>
+          </div>
+          
+          <div class="grid grid-cols-3 gap-6 text-center">
+            <div>
+              <div class="text-3xl font-bold text-brand-red mb-2">100+</div>
+              <div class="text-sm text-gray-400">Completed Projects</div>
+            </div>
+            <div>
+              <div class="text-3xl font-bold text-brand-red mb-2">10+</div>
+              <div class="text-sm text-gray-400">Years Experience</div>
+            </div>
+            <div>
+              <div class="text-3xl font-bold text-brand-red mb-2">0</div>
+              <div class="text-sm text-gray-400">Safety Incidents</div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- About Image -->
+        <div class="relative">
+          <img src="assets/images/roof_asbestos_removal_male.jpg" alt="Professional Team" 
+               class="w-full rounded-2xl shadow-2xl">
+          <div class="absolute inset-0 bg-gradient-to-t from-brand-black/50 to-transparent rounded-2xl"></div>
+          
+          <!-- Floating Stats -->
+          <div class="absolute bottom-6 left-6 right-6">
+            <div class="bg-white/10 glass rounded-lg p-4 border border-white/20">
+              <div class="flex items-center justify-between">
+                <div>
+                  <div class="text-2xl font-bold text-brand-red">Award Winning</div>
+                  <div class="text-sm text-gray-300">Excellence in Service</div>
+                </div>
+                <i class="fas fa-trophy text-yellow-500 text-3xl"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="py-20 bg-gradient-to-b from-brand-black to-brand-gray">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl lg:text-5xl font-bold mb-6">
+          What Our <span class="gradient-text">Clients Say</span>
+        </h2>
+        <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+          Over 500 satisfied clients trust our services. See some real testimonials from completed projects.
+        </p>
+        
+        <div class="flex items-center justify-center gap-4 mt-8">
+          <div class="flex text-yellow-500">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <div class="text-2xl font-bold">4.7/5 Stars</div>
+          <div class="text-gray-400">Based on 85+ reviews</div>
+        </div>
+      </div>
+      
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Testimonial 1 -->
+        <div class="testimonial-card rounded-2xl p-8 border border-white/10">
+          <div class="flex items-center gap-4 mb-6">
+            <div class="w-12 h-12 bg-brand-red rounded-full flex items-center justify-center font-bold text-xl">
+              A
+            </div>
+            <div>
+              <h4 class="font-bold">Alison Mitchell</h4>
+              <p class="text-sm text-gray-400">Surfers Paradise</p>
+            </div>
+          </div>
+          
+          <blockquote class="text-gray-300 mb-4 italic">
+            "Excellent work removing asbestos from our roof. The team was professional, punctual and left everything clean. 
+            All documentation was delivered as promised. Highly recommend!"
+          </blockquote>
+          
+          <div class="text-sm text-brand-red font-semibold">
+            Asbestos Removal - Residential Roof
+          </div>
+          
+          <div class="flex text-yellow-500 mt-2">
+            <i class="fas fa-star text-sm"></i>
+            <i class="fas fa-star text-sm"></i>
+            <i class="fas fa-star text-sm"></i>
+            <i class="fas fa-star text-sm"></i>
+            <i class="fas fa-star text-sm"></i>
+          </div>
+        </div>
+        
+        <!-- Testimonial 2 -->
+        <div class="testimonial-card rounded-2xl p-8 border border-white/10">
+          <div class="flex items-center gap-4 mb-6">
+            <div class="w-12 h-12 bg-brand-red rounded-full flex items-center justify-center font-bold text-xl">
+              L
+            </div>
+            <div>
+              <h4 class="font-bold">Luis Santos</h4>
+              <p class="text-sm text-gray-400">Southport</p>
+            </div>
+          </div>
+          
+          <blockquote class="text-gray-300 mb-4 italic">
+            "Needed urgent demolition for a commercial project. Breath Safe responded the same day and completed the work on time. 
+            Fair pricing and excellent communication throughout the process."
+          </blockquote>
+          
+          <div class="text-sm text-brand-red font-semibold">
+            Commercial Demolition - Strip Out
+          </div>
+          
+          <div class="flex text-yellow-500 mt-2">
+            <i class="fas fa-star text-sm"></i>
+            <i class="fas fa-star text-sm"></i>
+            <i class="fas fa-star text-sm"></i>
+            <i class="fas fa-star text-sm"></i>
+            <i class="fas fa-star text-sm"></i>
+          </div>
+        </div>
+        
+        <!-- Testimonial 3 -->
+        <div class="testimonial-card rounded-2xl p-8 border border-white/10">
+          <div class="flex items-center gap-4 mb-6">
+            <div class="w-12 h-12 bg-brand-red rounded-full flex items-center justify-center font-bold text-xl">
+              R
+            </div>
+            <div>
+              <h4 class="font-bold">Richelle Thompson</h4>
+              <p class="text-sm text-gray-400">Robina</p>
+            </div>
+          </div>
+          
+          <blockquote class="text-gray-300 mb-4 italic">
+            "Hired them for asbestos removal and bathroom demolition. They did everything in one project, which saved time and money. 
+            Impeccable work and very polite team. Will definitely hire again!"
+          </blockquote>
+          
+          <div class="text-sm text-brand-red font-semibold">
+            Complete Renovation - Bathroom
+          </div>
+          
+          <div class="flex text-yellow-500 mt-2">
+            <i class="fas fa-star text-sm"></i>
+            <i class="fas fa-star text-sm"></i>
+            <i class="fas fa-star text-sm"></i>
+            <i class="fas fa-star text-sm"></i>
+            <i class="fas fa-star text-sm"></i>
+          </div>
+        </div>
+        
+        <!-- Testimonial 4 -->
+        <div class="testimonial-card rounded-2xl p-8 border border-white/10">
+          <div class="flex items-center gap-4 mb-6">
+            <div class="w-12 h-12 bg-brand-red rounded-full flex items-center justify-center font-bold text-xl">
+              M
+            </div>
+            <div>
+              <h4 class="font-bold">Michael Chen</h4>
+              <p class="text-sm text-gray-400">Burleigh Heads</p>
+            </div>
+          </div>
+          
+          <blockquote class="text-gray-300 mb-4 italic">
+            "Exceptional floor preparation service. They removed all the old tiles and prepared the concrete perfectly for new flooring. 
+            Clean and professional work from start to finish."
+          </blockquote>
+          
+          <div class="text-sm text-brand-red font-semibold">
+            Floor Preparation - Residential
+          </div>
+          
+          <div class="flex text-yellow-500 mt-2">
+            <i class="fas fa-star text-sm"></i>
+            <i class="fas fa-star text-sm"></i>
+            <i class="fas fa-star text-sm"></i>
+            <i class="fas fa-star text-sm"></i>
+            <i class="fas fa-star text-sm"></i>
+          </div>
+        </div>
+        
+        <!-- Testimonial 5 -->
+        <div class="testimonial-card rounded-2xl p-8 border border-white/10">
+          <div class="flex items-center gap-4 mb-6">
+            <div class="w-12 h-12 bg-brand-red rounded-full flex items-center justify-center font-bold text-xl">
+              S
+            </div>
+            <div>
+              <h4 class="font-bold">Sarah Williams</h4>
+              <p class="text-sm text-gray-400">Coomera</p>
+            </div>
+          </div>
+          
+          <blockquote class="text-gray-300 mb-4 italic">
+            "Weekend emergency with exposed asbestos. The team arrived within 2 hours and resolved everything safely. 
+            24/7 service really works. Very grateful for their professionalism!"
+          </blockquote>
+          
+          <div class="text-sm text-brand-red font-semibold">
+            Emergency - Exposed Asbestos
+          </div>
+          
+          <div class="flex text-yellow-500 mt-2">
+            <i class="fas fa-star text-sm"></i>
+            <i class="fas fa-star text-sm"></i>
+            <i class="fas fa-star text-sm"></i>
+            <i class="fas fa-star text-sm"></i>
+            <i class="fas fa-star text-sm"></i>
+          </div>
+        </div>
+        
+        <!-- Testimonial 6 -->
+        <div class="testimonial-card rounded-2xl p-8 border border-white/10">
+          <div class="flex items-center gap-4 mb-6">
+            <div class="w-12 h-12 bg-brand-red rounded-full flex items-center justify-center font-bold text-xl">
+              D
+            </div>
+            <div>
+              <h4 class="font-bold">David Johnson</h4>
+              <p class="text-sm text-gray-400">Tweed Heads</p>
+            </div>
+          </div>
+          
+          <blockquote class="text-gray-300 mb-4 italic">
+            "Large commercial demolition project. Breath Safe coordinated everything perfectly, from permits to final disposal. 
+            Delivered on time and within budget. Reliable partners!"
+          </blockquote>
+          
+          <div class="text-sm text-brand-red font-semibold">
+            Commercial Demolition - Warehouse
+          </div>
+          
+          <div class="flex text-yellow-500 mt-2">
+            <i class="fas fa-star text-sm"></i>
+            <i class="fas fa-star text-sm"></i>
+            <i class="fas fa-star text-sm"></i>
+            <i class="fas fa-star text-sm"></i>
+            <i class="fas fa-star text-sm"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-20 bg-brand-black">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl lg:text-5xl font-bold mb-6">
+          <span class="gradient-text">Completed Projects</span>
+        </h2>
+        <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+          See some of our successfully completed projects. Every job is executed with maximum safety and quality.
+        </p>
+      </div>
+      
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+        <!-- Project 1 -->
+        <div class="bg-white/5 glass rounded-2xl overflow-hidden border border-white/10 hover:transform hover:scale-105 transition-all duration-300">
+          <img src="assets/images/bathroom_demolished.jpg" alt="Bathroom Strip-Out" 
+               class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">Bathroom Strip-Out</h3>
+            <p class="text-sm text-gray-400 mb-4">Gold Coast - 2024</p>
+            <div class="flex items-center gap-2">
+              <i class="fas fa-check text-brand-red"></i>
+              <span class="text-sm">Complete strip-out and preparation</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Project 2 -->
+        <div class="bg-white/5 glass rounded-2xl overflow-hidden border border-white/10 hover:transform hover:scale-105 transition-all duration-300">
+          <img src="assets/images/kitchen_demolished.jpg" alt="Kitchen Demolition" 
+               class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">Kitchen Demolition</h3>
+            <p class="text-sm text-gray-400 mb-4">Southport - 2024</p>
+            <div class="flex items-center gap-2">
+              <i class="fas fa-check text-brand-red"></i>
+              <span class="text-sm">Professional demolition service</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Project 3 -->
+        <div class="bg-white/5 glass rounded-2xl overflow-hidden border border-white/10 hover:transform hover:scale-105 transition-all duration-300">
+          <img src="assets/images/bedroom_demolished.jpg" alt="Bedroom Strip-Out" 
+               class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">Bedroom Strip-Out</h3>
+            <p class="text-sm text-gray-400 mb-4">Robina - 2024</p>
+            <div class="flex items-center gap-2">
+              <i class="fas fa-check text-brand-red"></i>
+              <span class="text-sm">Complete renovation preparation</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Project 4 -->
+        <div class="bg-white/5 glass rounded-2xl overflow-hidden border border-white/10 hover:transform hover:scale-105 transition-all duration-300">
+          <img src="assets/images/roof_asbestos_removal_male.jpg" alt="Roof Asbestos Removal" 
+               class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">Roof Asbestos Removal</h3>
+            <p class="text-sm text-gray-400 mb-4">Burleigh - 2024</p>
+            <div class="flex items-center gap-2">
+              <i class="fas fa-check text-brand-red"></i>
+              <span class="text-sm">Safe asbestos removal</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Before & After Section -->
+      <div class="bg-white/5 glass rounded-2xl p-8 border border-white/10">
+        <h3 class="text-3xl font-bold text-center mb-12">
+          <span class="gradient-text">Before & After</span>
+        </h3>
+        
+        <div class="grid md:grid-cols-2 gap-12">
+          <!-- Bathroom Before/After -->
+          <div>
+            <h4 class="text-2xl font-bold mb-6 text-center">Bathroom Renovation</h4>
+            <div class="grid grid-cols-2 gap-4">
+              <div>
+                <h5 class="text-lg font-semibold mb-3 text-brand-red">BEFORE</h5>
+                <img src="assets/images/bathroom_before_clean.jpg" alt="Bathroom Before" 
+                     class="w-full h-40 object-cover rounded-lg">
+                <p class="text-sm text-gray-400 mt-2">Old bathroom from 1980s needing renovation</p>
+              </div>
+              <div>
+                <h5 class="text-lg font-semibold mb-3 text-green-500">AFTER</h5>
+                <img src="assets/images/bathroom_after.jpg" alt="Bathroom After" 
+                     class="w-full h-40 object-cover rounded-lg">
+                <p class="text-sm text-gray-400 mt-2">Modern clean bathroom, safe and certified</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Kitchen Before/After -->
+          <div>
+            <h4 class="text-2xl font-bold mb-6 text-center">Kitchen Renovation</h4>
+            <div class="grid grid-cols-2 gap-4">
+              <div>
+                <h5 class="text-lg font-semibold mb-3 text-brand-red">BEFORE</h5>
+                <img src="assets/images/kitchen_before_clean.jpg" alt="Kitchen Before" 
+                     class="w-full h-40 object-cover rounded-lg">
+                <p class="text-sm text-gray-400 mt-2">Old kitchen from 1980s needing renovation</p>
+              </div>
+              <div>
+                <h5 class="text-lg font-semibold mb-3 text-green-500">AFTER</h5>
+                <img src="assets/images/kitchen_after.jpg" alt="Kitchen After" 
+                     class="w-full h-40 object-cover rounded-lg">
+                <p class="text-sm text-gray-400 mt-2">Modern kitchen renovation, professionally completed</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service Areas Section -->
+  <section class="py-20 bg-gradient-to-b from-brand-gray to-brand-black">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl lg:text-5xl font-bold mb-6">
+          <span class="gradient-text">Service Areas</span>
+        </h2>
+        <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+          We serve the entire Gold Coast to Sunshine Coast region with 24/7 emergency services. 
+          Rapid response guaranteed within 2 hours.
+        </p>
+      </div>
+      
+      <div class="grid md:grid-cols-3 gap-8 mb-12">
+        <!-- Gold Coast -->
+        <div class="bg-white/5 glass rounded-2xl p-8 border border-white/10">
+          <div class="text-center mb-6">
+            <i class="fas fa-map-marker-alt text-brand-red text-3xl mb-4"></i>
+            <h3 class="text-2xl font-bold">Gold Coast</h3>
+          </div>
+          
+          <div class="grid grid-cols-2 gap-4 text-sm">
+            <ul class="space-y-2">
+              <li class="flex items-center gap-2">
+                <i class="fas fa-check text-brand-red text-xs"></i>
+                <span>Southport</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="fas fa-check text-brand-red text-xs"></i>
+                <span>Surfers Paradise</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="fas fa-check text-brand-red text-xs"></i>
+                <span>Broadbeach</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="fas fa-check text-brand-red text-xs"></i>
+                <span>Robina</span>
+              </li>
+            </ul>
+            <ul class="space-y-2">
+              <li class="flex items-center gap-2">
+                <i class="fas fa-check text-brand-red text-xs"></i>
+                <span>Burleigh Heads</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="fas fa-check text-brand-red text-xs"></i>
+                <span>Coomera</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="fas fa-check text-brand-red text-xs"></i>
+                <span>Nerang</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="fas fa-check text-brand-red text-xs"></i>
+                <span>Palm Beach</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        
+        <!-- Brisbane & Region -->
+        <div class="bg-white/5 glass rounded-2xl p-8 border border-white/10">
+          <div class="text-center mb-6">
+            <i class="fas fa-city text-brand-red text-3xl mb-4"></i>
+            <h3 class="text-2xl font-bold">Brisbane & Region</h3>
+          </div>
+          
+          <div class="grid grid-cols-2 gap-4 text-sm">
+            <ul class="space-y-2">
+              <li class="flex items-center gap-2">
+                <i class="fas fa-check text-brand-red text-xs"></i>
+                <span>Brisbane CBD</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="fas fa-check text-brand-red text-xs"></i>
+                <span>Logan</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="fas fa-check text-brand-red text-xs"></i>
+                <span>Ipswich</span>
+              </li>
+            </ul>
+            <ul class="space-y-2">
+              <li class="flex items-center gap-2">
+                <i class="fas fa-check text-brand-red text-xs"></i>
+                <span>Redlands</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="fas fa-check text-brand-red text-xs"></i>
+                <span>Moreton Bay</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="fas fa-check text-brand-red text-xs"></i>
+                <span>Pine Rivers</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        
+        <!-- Northern NSW -->
+        <div class="bg-white/5 glass rounded-2xl p-8 border border-white/10">
+          <div class="text-center mb-6">
+            <i class="fas fa-mountain text-brand-red text-3xl mb-4"></i>
+            <h3 class="text-2xl font-bold">Northern NSW</h3>
+          </div>
+          
+          <div class="grid grid-cols-2 gap-4 text-sm">
+            <ul class="space-y-2">
+              <li class="flex items-center gap-2">
+                <i class="fas fa-check text-brand-red text-xs"></i>
+                <span>Tweed Heads</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="fas fa-check text-brand-red text-xs"></i>
+                <span>Byron Bay</span>
+              </li>
+            </ul>
+            <ul class="space-y-2">
+              <li class="flex items-center gap-2">
+                <i class="fas fa-check text-brand-red text-xs"></i>
+                <span>Kingscliff</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="fas fa-check text-brand-red text-xs"></i>
+                <span>Ballina</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Emergency Service -->
+      <div class="bg-brand-red/10 border border-brand-red/30 rounded-2xl p-8 text-center">
+        <div class="flex items-center justify-center gap-4 mb-4">
+          <i class="fas fa-exclamation-triangle text-brand-red text-3xl"></i>
+          <h3 class="text-2xl font-bold">Emergency Service</h3>
+        </div>
+        <p class="text-lg text-gray-300 mb-4">
+          24/7 service available for emergencies. Guaranteed response within 2 hours for situations involving exposed asbestos.
+        </p>
+        <p class="text-brand-red font-semibold">
+          Coverage area: Gold Coast to Sunshine Coast
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 bg-brand-black">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl lg:text-5xl font-bold mb-6">
+          <span class="gradient-text">Get In Touch</span>
+        </h2>
+        <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+          Ready to start your project? Contact us now and receive your free quote within 24 hours. 
+          Professional service guaranteed.
+        </p>
+      </div>
+      
+      <div class="grid lg:grid-cols-2 gap-16">
+        
+        <!-- Contact Information -->
+        <div>
+          <h3 class="text-3xl font-bold mb-8">Contact Us</h3>
+          
+          <div class="space-y-8">
+            <!-- Phone -->
+            <div class="flex items-start gap-4">
+              <div class="bg-brand-red/20 p-3 rounded-lg">
+                <i class="fas fa-phone text-brand-red text-xl"></i>
+              </div>
+              <div>
+                <h4 class="text-xl font-bold mb-2">Phone</h4>
+                <a href="tel:+61432293589" class="text-lg text-brand-red hover:underline">
+                  (61) 432 293 589
+                </a>
+                <p class="text-sm text-gray-400">Available 24/7 for emergencies</p>
+              </div>
+            </div>
+            
+            <!-- WhatsApp -->
+            <div class="flex items-start gap-4">
+              <div class="bg-brand-green/20 p-3 rounded-lg">
+                <i class="fab fa-whatsapp text-brand-green text-xl"></i>
+              </div>
+              <div>
+                <h4 class="text-xl font-bold mb-2">WhatsApp</h4>
+                <a href="https://wa.me/61432293589" class="text-lg text-brand-green hover:underline">
+                  (61) 432 293 589
+                </a>
+                <p class="text-sm text-gray-400">Quick response guaranteed</p>
+              </div>
+            </div>
+            
+            <!-- Email -->
+            <div class="flex items-start gap-4">
+              <div class="bg-blue-500/20 p-3 rounded-lg">
+                <i class="fas fa-envelope text-blue-500 text-xl"></i>
+              </div>
+              <div>
+                <h4 class="text-xl font-bold mb-2">Email</h4>
+                <a href="mailto:hello@dldemolition.com.au" class="text-lg text-blue-500 hover:underline">
+                  hello@dldemolition.com.au
+                </a>
+                <p class="text-sm text-gray-400">Response within 4 hours</p>
+              </div>
+            </div>
+            
+            <!-- Business Hours -->
+            <div class="flex items-start gap-4">
+              <div class="bg-purple-500/20 p-3 rounded-lg">
+                <i class="fas fa-clock text-purple-500 text-xl"></i>
+              </div>
+              <div>
+                <h4 class="text-xl font-bold mb-2">Business Hours</h4>
+                <div class="text-gray-300">
+                  <p>Monday to Friday: 7:00 AM - 6:00 PM</p>
+                  <p>Saturday: 8:00 AM - 4:00 PM</p>
+                  <p class="text-brand-red font-semibold">Emergencies: 24/7</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Emergency CTA -->
+          <div class="bg-brand-red/10 border border-brand-red/30 rounded-2xl p-6 mt-8">
+            <div class="flex items-center gap-3 mb-4">
+              <i class="fas fa-exclamation-triangle text-brand-red text-2xl"></i>
+              <h4 class="text-xl font-bold">Emergency 24/7</h4>
+            </div>
+            <p class="text-gray-300 mb-4">
+              Exposed asbestos or dangerous situation? Call now for immediate assistance!
+            </p>
+            <a href="tel:+61432293589" class="cta-button px-6 py-3 rounded-lg font-semibold">
+              <i class="fas fa-phone mr-2"></i>
+              Emergency Call
+            </a>
+          </div>
+        </div>
+        
+        <!-- Contact Form -->
+        <div>
+          <h3 class="text-3xl font-bold mb-8">Request Your Quote</h3>
+          
+          <div class="bg-white/5 glass rounded-2xl p-8 border border-white/10">
+            <!-- Success Message -->
+            <div id="contact-success-message" class="success-message rounded-lg p-4 mb-6">
+              <div class="flex items-center">
+                <i class="fas fa-check-circle text-2xl mr-3"></i>
+                <div>
+                  <h4 class="font-bold">Thank you for your inquiry!</h4>
+                  <p class="text-sm">We'll contact you within 24 hours with your personalized quote.</p>
+                </div>
+              </div>
+            </div>
+            
+            <form id="contact-form" class="space-y-6">
+              <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                  <label for="contact-name" class="block text-sm font-medium mb-2">Full Name *</label>
+                  <input type="text" id="contact-name" name="name" required 
+                         placeholder="Your full name" 
+                         class="w-full bg-black/40 border border-white/20 rounded-lg px-4 py-3 focus:border-brand-red focus:outline-none transition-colors">
+                </div>
+                <div>
+                  <label for="contact-phone" class="block text-sm font-medium mb-2">Phone Number *</label>
+                  <input type="tel" id="contact-phone" name="phone" required 
+                         placeholder="Your phone number" 
+                         class="w-full bg-black/40 border border-white/20 rounded-lg px-4 py-3 focus:border-brand-red focus:outline-none transition-colors">
+                </div>
+              </div>
+              
+              <div>
+                <label for="contact-email" class="block text-sm font-medium mb-2">Email Address</label>
+                <input type="email" id="contact-email" name="email" 
+                       placeholder="Your email address" 
+                       class="w-full bg-black/40 border border-white/20 rounded-lg px-4 py-3 focus:border-brand-red focus:outline-none transition-colors">
+              </div>
+              
+              <div>
+                <label for="contact-service" class="block text-sm font-medium mb-2">Service Required *</label>
+                <select id="contact-service" name="service" required 
+                        class="w-full bg-black/40 border border-white/20 rounded-lg px-4 py-3 focus:border-brand-red focus:outline-none transition-colors">
+                  <option value="">Select service type</option>
+                  <option value="asbestos-removal">Asbestos Removal</option>
+                  <option value="demolition">Demolition</option>
+                  <option value="floor-grinding">Floor Grinding</option>
+                  <option value="tile-removal">Tile Removal</option>
+                  <option value="strip-out">Strip Out</option>
+                  <option value="emergency">Emergency Service</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              
+              <div>
+                <label for="contact-message" class="block text-sm font-medium mb-2">Project Details</label>
+                <textarea id="contact-message" name="message" rows="4" 
+                          placeholder="Please describe your project, timeline, and any specific requirements..." 
+                          class="w-full bg-black/40 border border-white/20 rounded-lg px-4 py-3 focus:border-brand-red focus:outline-none transition-colors resize-none"></textarea>
+              </div>
+              
+              <button type="submit" 
+                      class="w-full cta-button py-4 rounded-lg font-bold text-lg">
+                <i class="fas fa-paper-plane mr-2"></i>
+                Send Message
+              </button>
+              
+              <p class="text-xs text-gray-400 text-center">
+                <i class="fas fa-lock mr-1"></i>
+                Your information is secure and will only be used for project communication
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-brand-gray border-t border-white/10 py-12">
+    <div class="container mx-auto px-4">
+      <div class="grid md:grid-cols-4 gap-8">
+        
+        <!-- Company Info -->
+        <div>
+          <div class="flex items-center gap-3 mb-6">
+            <img src="assets/images/logo_symbol_only.png" alt="Breath Safe Logo" class="w-10 h-10 object-contain">
+            <div>
+              <h3 class="font-bold text-lg gradient-text">Breath Safe</h3>
+              <p class="text-xs text-gray-400">Demolition & Asbestos Removal</p>
+            </div>
+          </div>
+          <p class="text-gray-300 text-sm mb-4">
+            Licensed specialists in asbestos removal and demolition, serving Gold Coast to Sunshine Coast with excellence and safety.
+          </p>
+          <div class="flex gap-4">
+            <a href="https://wa.me/61432293589" class="text-brand-green hover:text-green-400 transition-colors">
+              <i class="fab fa-whatsapp text-xl"></i>
+            </a>
+            <a href="tel:+61432293589" class="text-brand-red hover:text-red-400 transition-colors">
+              <i class="fas fa-phone text-xl"></i>
+            </a>
+            <a href="mailto:hello@dldemolition.com.au" class="text-blue-500 hover:text-blue-400 transition-colors">
+              <i class="fas fa-envelope text-xl"></i>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Services -->
+        <div>
+          <h4 class="font-bold text-lg mb-4">Our Services</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#services" class="text-gray-300 hover:text-brand-red transition-colors">Asbestos Removal</a></li>
+            <li><a href="#services" class="text-gray-300 hover:text-brand-red transition-colors">Demolition</a></li>
+            <li><a href="#services" class="text-gray-300 hover:text-brand-red transition-colors">Floor Grinding</a></li>
+            <li><a href="#services" class="text-gray-300 hover:text-brand-red transition-colors">Tile Removal</a></li>
+            <li><a href="#services" class="text-gray-300 hover:text-brand-red transition-colors">Strip Out</a></li>
+            <li><a href="#contact" class="text-gray-300 hover:text-brand-red transition-colors">Emergency Service</a></li>
+          </ul>
+        </div>
+        
+        <!-- Quick Links -->
+        <div>
+          <h4 class="font-bold text-lg mb-4">Quick Links</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#home" class="text-gray-300 hover:text-brand-red transition-colors">Home</a></li>
+            <li><a href="#about" class="text-gray-300 hover:text-brand-red transition-colors">About Us</a></li>
+            <li><a href="#projects" class="text-gray-300 hover:text-brand-red transition-colors">Projects</a></li>
+            <li><a href="#testimonials" class="text-gray-300 hover:text-brand-red transition-colors">Reviews</a></li>
+            <li><a href="#contact" class="text-gray-300 hover:text-brand-red transition-colors">Contact</a></li>
+            <li><a href="#contact" class="text-gray-300 hover:text-brand-red transition-colors">Free Quote</a></li>
+          </ul>
+        </div>
+        
+        <!-- Contact Info -->
+        <div>
+          <h4 class="font-bold text-lg mb-4">Contact Info</h4>
+          <div class="space-y-3 text-sm">
+            <div class="flex items-center gap-2">
+              <i class="fas fa-phone text-brand-red"></i>
+              <a href="tel:+61432293589" class="text-gray-300 hover:text-white transition-colors">
+                (61) 432 293 589
+              </a>
+            </div>
+            <div class="flex items-center gap-2">
+              <i class="fas fa-envelope text-brand-red"></i>
+              <a href="mailto:hello@dldemolition.com.au" class="text-gray-300 hover:text-white transition-colors">
+                hello@dldemolition.com.au
+              </a>
+            </div>
+            <div class="flex items-start gap-2">
+              <i class="fas fa-map-marker-alt text-brand-red mt-1"></i>
+              <span class="text-gray-300">
+                Serving Gold Coast to Sunshine Coast, Queensland, Australia
+              </span>
+            </div>
+            <div class="flex items-center gap-2">
+              <i class="fas fa-clock text-brand-red"></i>
+              <span class="text-gray-300">24/7 Emergency Service</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Bottom Footer -->
+      <div class="border-t border-white/10 mt-8 pt-8 text-center">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+          <p class="text-sm text-gray-400">
+            © 2024 Breath Safe Demolition & Asbestos Removal. All rights reserved.
+          </p>
+          <div class="flex items-center gap-6 text-sm">
+            <span class="text-gray-400">Licensed • Insured • Certified</span>
+            <div class="flex items-center gap-2">
+              <i class="fas fa-shield-alt text-green-500"></i>
+              <span class="text-gray-400">EPA Compliant</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Enhanced JavaScript -->
+  <script>
+    // Contact Form Handling
+    document.getElementById('contact-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      // Show success message
+      document.getElementById('contact-success-message').style.display = 'block';
+      this.style.display = 'none';
+      
+      // Scroll to success message
+      document.getElementById('contact-success-message').scrollIntoView({ 
+        behavior: 'smooth', 
+        block: 'center' 
+      });
+    });
+
+    // Enhanced scroll effects
+    window.addEventListener('scroll', function() {
+      const scrolled = window.pageYOffset;
+      const rate = scrolled * -0.5;
+      
+      // Parallax effect for hero background
+      const hero = document.querySelector('#home');
+      if (hero) {
+        hero.style.transform = `translateY(${rate}px)`;
+      }
+    });
+
+    // Intersection Observer for animations
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver(function(entries) {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate-fade-in');
+        }
+      });
+    }, observerOptions);
+
+    // Observe all service cards and testimonials
+    document.querySelectorAll('.service-card, .testimonial-card').forEach(card => {
+      observer.observe(card);
+    });
+
+    // Enhanced mobile menu with smooth animations
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');
+      
+      if (!menu.classList.contains('hidden')) {
+        menu.style.animation = 'slideDown 0.3s ease-out';
+      }
+    }
+
+    // Close mobile menu when clicking on links
+    document.querySelectorAll('#mobile-menu a').forEach(link => {
+      link.addEventListener('click', () => {
+        document.getElementById('mobile-menu').classList.add('hidden');
+      });
+    });
+
+    // Smooth reveal animations for sections
+    const revealElements = document.querySelectorAll('section');
+    const revealObserver = new IntersectionObserver(function(entries) {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateY(0)';
+        }
+      });
+    }, { threshold: 0.1 });
+
+    revealElements.forEach(element => {
+      element.style.opacity = '0';
+      element.style.transform = 'translateY(20px)';
+      element.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+      revealObserver.observe(element);
+    });
+
+    // Add CSS animations
+    const style = document.createElement('style');
+    style.textContent = `
+      @keyframes slideDown {
+        from {
+          opacity: 0;
+          transform: translateY(-10px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      
+      .animate-fade-in {
+        animation: fadeIn 0.6s ease-out forwards;
+      }
+      
+      @media (prefers-reduced-motion: reduce) {
+        *, *::before, *::after {
+          animation-duration: 0.01ms !important;
+          animation-iteration-count: 1 !important;
+          transition-duration: 0.01ms !important;
+        }
+      }
+    `;
+    document.head.appendChild(style);
+  </script>
+</body>
+</html>
+
+
+  <!-- Google Maps Section -->
+  <section class="py-20 bg-brand-black">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl lg:text-5xl font-bold mb-6">
+          <span class="gradient-text">Our Coverage Area</span>
+        </h2>
+        <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+          We proudly serve the entire Gold Coast to Sunshine Coast region. 
+          See our coverage area and get rapid response within 2 hours.
+        </p>
+      </div>
+      
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        
+        <!-- Map Placeholder -->
+        <div class="bg-white/5 glass rounded-2xl p-8 border border-white/10">
+          <div class="aspect-video bg-gray-800 rounded-lg flex items-center justify-center mb-6">
+            <div class="text-center">
+              <i class="fas fa-map-marked-alt text-brand-red text-4xl mb-4"></i>
+              <h3 class="text-xl font-bold mb-2">Interactive Service Map</h3>
+              <p class="text-gray-400 text-sm">Gold Coast to Sunshine Coast Coverage</p>
+            </div>
+          </div>
+          
+          <!-- Quick Coverage Stats -->
+          <div class="grid grid-cols-3 gap-4 text-center">
+            <div class="bg-black/30 rounded-lg p-4">
+              <div class="text-2xl font-bold text-brand-red mb-1">50+</div>
+              <div class="text-xs text-gray-400">Suburbs Covered</div>
+            </div>
+            <div class="bg-black/30 rounded-lg p-4">
+              <div class="text-2xl font-bold text-brand-red mb-1">2h</div>
+              <div class="text-xs text-gray-400">Response Time</div>
+            </div>
+            <div class="bg-black/30 rounded-lg p-4">
+              <div class="text-2xl font-bold text-brand-red mb-1">24/7</div>
+              <div class="text-xs text-gray-400">Emergency</div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Coverage Details -->
+        <div>
+          <h3 class="text-3xl font-bold mb-8">Rapid Response Guarantee</h3>
+          
+          <div class="space-y-6">
+            <div class="flex items-start gap-4">
+              <div class="bg-brand-red/20 p-3 rounded-lg">
+                <i class="fas fa-clock text-brand-red text-xl"></i>
+              </div>
+              <div>
+                <h4 class="text-xl font-bold mb-2">2-Hour Emergency Response</h4>
+                <p class="text-gray-300">
+                  For emergency situations involving exposed asbestos or dangerous materials, 
+                  our team guarantees arrival within 2 hours across our entire service area.
+                </p>
+              </div>
+            </div>
+            
+            <div class="flex items-start gap-4">
+              <div class="bg-brand-red/20 p-3 rounded-lg">
+                <i class="fas fa-route text-brand-red text-xl"></i>
+              </div>
+              <div>
+                <h4 class="text-xl font-bold mb-2">Strategic Location Coverage</h4>
+                <p class="text-gray-300">
+                  Our teams are strategically positioned across the region to ensure 
+                  rapid response times from Gold Coast to Sunshine Coast and beyond.
+                </p>
+              </div>
+            </div>
+            
+            <div class="flex items-start gap-4">
+              <div class="bg-brand-red/20 p-3 rounded-lg">
+                <i class="fas fa-phone-alt text-brand-red text-xl"></i>
+              </div>
+              <div>
+                <h4 class="text-xl font-bold mb-2">24/7 Dispatch Center</h4>
+                <p class="text-gray-300">
+                  Our dispatch center operates around the clock to coordinate 
+                  emergency responses and schedule routine services efficiently.
+                </p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Coverage CTA -->
+          <div class="bg-white/5 glass rounded-2xl p-6 border border-white/10 mt-8">
+            <h4 class="text-xl font-bold mb-4">Not Sure If We Cover Your Area?</h4>
+            <p class="text-gray-300 mb-4">
+              Contact us now to confirm coverage and get your free quote. 
+              We're expanding our service area regularly.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4">
+              <a href="tel:+61432293589" class="cta-button px-6 py-3 rounded-lg font-semibold text-center">
+                <i class="fas fa-phone mr-2"></i>
+                Call Now
+              </a>
+              <a href="https://wa.me/61432293589" class="bg-brand-green hover:bg-green-600 px-6 py-3 rounded-lg font-semibold text-center transition-colors">
+                <i class="fab fa-whatsapp mr-2"></i>
+                WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog/SEO Section -->
+  <section class="py-20 bg-gradient-to-b from-brand-gray to-brand-black">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl lg:text-5xl font-bold mb-6">
+          <span class="gradient-text">Safety Resources</span>
+        </h2>
+        <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+          Stay informed about asbestos safety, Australian regulations, and best practices. 
+          Knowledge is your first line of defense.
+        </p>
+      </div>
+      
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Blog Post 1 -->
+        <article class="bg-white/5 glass rounded-2xl overflow-hidden border border-white/10 hover:transform hover:scale-105 transition-all duration-300">
+          <div class="h-48 bg-gradient-to-br from-brand-red/20 to-brand-red/5 flex items-center justify-center">
+            <i class="fas fa-hard-hat text-brand-red text-4xl"></i>
+          </div>
+          <div class="p-6">
+            <div class="text-sm text-brand-red font-semibold mb-2">Safety Guide</div>
+            <h3 class="text-xl font-bold mb-3">Identifying Asbestos in Australian Homes</h3>
+            <p class="text-gray-300 text-sm mb-4">
+              Learn how to identify potential asbestos materials in homes built before 1990. 
+              Essential knowledge for homeowners and renovators.
+            </p>
+            <div class="flex items-center justify-between">
+              <span class="text-xs text-gray-400">5 min read</span>
+              <a href="#" class="text-brand-red hover:underline text-sm font-semibold">
+                Read More <i class="fas fa-arrow-right ml-1"></i>
+              </a>
+            </div>
+          </div>
+        </article>
+        
+        <!-- Blog Post 2 -->
+        <article class="bg-white/5 glass rounded-2xl overflow-hidden border border-white/10 hover:transform hover:scale-105 transition-all duration-300">
+          <div class="h-48 bg-gradient-to-br from-green-500/20 to-green-500/5 flex items-center justify-center">
+            <i class="fas fa-leaf text-green-500 text-4xl"></i>
+          </div>
+          <div class="p-6">
+            <div class="text-sm text-green-500 font-semibold mb-2">Regulations</div>
+            <h3 class="text-xl font-bold mb-3">Australian Asbestos Removal Laws 2024</h3>
+            <p class="text-gray-300 text-sm mb-4">
+              Understanding your legal obligations and rights when dealing with asbestos. 
+              Updated for current Queensland regulations.
+            </p>
+            <div class="flex items-center justify-between">
+              <span class="text-xs text-gray-400">8 min read</span>
+              <a href="#" class="text-brand-red hover:underline text-sm font-semibold">
+                Read More <i class="fas fa-arrow-right ml-1"></i>
+              </a>
+            </div>
+          </div>
+        </article>
+        
+        <!-- Blog Post 3 -->
+        <article class="bg-white/5 glass rounded-2xl overflow-hidden border border-white/10 hover:transform hover:scale-105 transition-all duration-300">
+          <div class="h-48 bg-gradient-to-br from-blue-500/20 to-blue-500/5 flex items-center justify-center">
+            <i class="fas fa-tools text-blue-500 text-4xl"></i>
+          </div>
+          <div class="p-6">
+            <div class="text-sm text-blue-500 font-semibold mb-2">Best Practices</div>
+            <h3 class="text-xl font-bold mb-3">Safe Demolition Planning Guide</h3>
+            <p class="text-gray-300 text-sm mb-4">
+              Step-by-step guide to planning a safe demolition project. 
+              From permits to disposal, everything you need to know.
+            </p>
+            <div class="flex items-center justify-between">
+              <span class="text-xs text-gray-400">12 min read</span>
+              <a href="#" class="text-brand-red hover:underline text-sm font-semibold">
+                Read More <i class="fas fa-arrow-right ml-1"></i>
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+      
+      <!-- Newsletter Signup -->
+      <div class="bg-white/5 glass rounded-2xl p-8 border border-white/10 mt-16 text-center">
+        <h3 class="text-2xl font-bold mb-4">Stay Updated on Safety</h3>
+        <p class="text-gray-300 mb-6 max-w-2xl mx-auto">
+          Get the latest safety tips, regulation updates, and industry news delivered to your inbox. 
+          Knowledge keeps you and your family safe.
+        </p>
+        
+        <form class="max-w-md mx-auto flex gap-4">
+          <input type="email" placeholder="Your email address" 
+                 class="flex-1 bg-black/40 border border-white/20 rounded-lg px-4 py-3 focus:border-brand-red focus:outline-none transition-colors">
+          <button type="submit" class="cta-button px-6 py-3 rounded-lg font-semibold">
+            Subscribe
+          </button>
+        </form>
+        
+        <p class="text-xs text-gray-400 mt-4">
+          No spam, unsubscribe anytime. Your email is secure with us.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Chat Bot Widget -->
+  <div id="chat-widget" class="fixed bottom-24 right-4 z-40 hidden">
+    <div class="bg-white/10 glass rounded-2xl p-6 border border-white/20 w-80 shadow-2xl">
+      <div class="flex items-center justify-between mb-4">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 bg-brand-red rounded-full flex items-center justify-center">
+            <i class="fas fa-robot text-white"></i>
+          </div>
+          <div>
+            <h4 class="font-bold">Safety Assistant</h4>
+            <p class="text-xs text-gray-400">Online now</p>
+          </div>
+        </div>
+        <button onclick="toggleChatWidget()" class="text-gray-400 hover:text-white">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      
+      <div class="space-y-3 mb-4 max-h-40 overflow-y-auto">
+        <div class="bg-black/30 rounded-lg p-3">
+          <p class="text-sm">Hi! I'm here to help with your asbestos and demolition questions. What can I assist you with?</p>
+        </div>
+      </div>
+      
+      <div class="space-y-2">
+        <button onclick="sendQuickMessage('I need an emergency asbestos removal')" 
+                class="w-full text-left bg-brand-red/20 hover:bg-brand-red/30 rounded-lg p-2 text-sm transition-colors">
+          🚨 Emergency asbestos removal
+        </button>
+        <button onclick="sendQuickMessage('I want a quote for demolition')" 
+                class="w-full text-left bg-brand-red/20 hover:bg-brand-red/30 rounded-lg p-2 text-sm transition-colors">
+          💰 Get demolition quote
+        </button>
+        <button onclick="sendQuickMessage('What areas do you cover?')" 
+                class="w-full text-left bg-brand-red/20 hover:bg-brand-red/30 rounded-lg p-2 text-sm transition-colors">
+          📍 Check coverage area
+        </button>
+      </div>
+      
+      <div class="mt-4 pt-4 border-t border-white/10">
+        <a href="https://wa.me/61432293589" class="cta-button w-full py-2 rounded-lg font-semibold text-center block text-sm">
+          <i class="fab fa-whatsapp mr-2"></i>
+          Continue on WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Chat Bot Trigger -->
+  <button id="chat-trigger" 
+          onclick="toggleChatWidget()" 
+          class="fixed bottom-24 right-4 z-50 bg-blue-600 hover:bg-blue-700 text-white rounded-full w-14 h-14 flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300">
+    <i class="fas fa-comments text-xl"></i>
+  </button>
+
+  <!-- Enhanced JavaScript -->
+  <script>
+    // Chat Widget Functions
+    function toggleChatWidget() {
+      const widget = document.getElementById('chat-widget');
+      const trigger = document.getElementById('chat-trigger');
+      
+      if (widget.classList.contains('hidden')) {
+        widget.classList.remove('hidden');
+        widget.style.animation = 'slideUp 0.3s ease-out';
+        trigger.innerHTML = '<i class="fas fa-times text-xl"></i>';
+      } else {
+        widget.classList.add('hidden');
+        trigger.innerHTML = '<i class="fas fa-comments text-xl"></i>';
+      }
+    }
+
+    function sendQuickMessage(message) {
+      const encodedMessage = encodeURIComponent(message);
+      window.open(`https://wa.me/61432293589?text=${encodedMessage}`, '_blank');
+    }
+
+    // Auto-show chat widget after 30 seconds
+    setTimeout(() => {
+      const widget = document.getElementById('chat-widget');
+      if (widget.classList.contains('hidden')) {
+        toggleChatWidget();
+        
+        // Auto-hide after 10 seconds if not interacted with
+        setTimeout(() => {
+          if (!widget.classList.contains('hidden')) {
+            toggleChatWidget();
+          }
+        }, 10000);
+      }
+    }, 30000);
+
+    // Enhanced form submissions with WhatsApp integration
+    function submitToWhatsApp(formData) {
+      const message = `New Quote Request:
+Name: ${formData.name}
+Phone: ${formData.phone}
+Email: ${formData.email || 'Not provided'}
+Service: ${formData.service}
+Location: ${formData.suburb || 'Not specified'}
+Details: ${formData.message || 'No additional details'}`;
+      
+      const encodedMessage = encodeURIComponent(message);
+      window.open(`https://wa.me/61432293589?text=${encodedMessage}`, '_blank');
+    }
+
+    // Update form submissions to integrate with WhatsApp
+    document.getElementById('enhanced-quote-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      const formData = new FormData(this);
+      const data = Object.fromEntries(formData);
+      
+      // Show success message
+      document.getElementById('success-message').style.display = 'block';
+      this.style.display = 'none';
+      
+      // Send to WhatsApp after 2 seconds
+      setTimeout(() => {
+        submitToWhatsApp(data);
+      }, 2000);
+    });
+
+    document.getElementById('contact-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      const formData = new FormData(this);
+      const data = Object.fromEntries(formData);
+      
+      // Show success message
+      document.getElementById('contact-success-message').style.display = 'block';
+      this.style.display = 'none';
+      
+      // Send to WhatsApp after 2 seconds
+      setTimeout(() => {
+        submitToWhatsApp(data);
+      }, 2000);
+    });
+
+    // Add slideUp animation
+    const chatStyle = document.createElement('style');
+    chatStyle.textContent = `
+      @keyframes slideUp {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    `;
+    document.head.appendChild(chatStyle);
+  </script>
+

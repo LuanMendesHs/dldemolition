@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offline - Breathe Safe</title>
+    <meta name="theme-color" content="#e10600">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .offline-container {
+            max-width: 500px;
+            padding: 40px 20px;
+        }
+        
+        .logo {
+            width: 80px;
+            height: 80px;
+            background: #e10600;
+            border-radius: 50%;
+            margin: 0 auto 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #e10600;
+        }
+        
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            color: #cccccc;
+        }
+        
+        .contact-info {
+            background: rgba(225, 6, 0, 0.1);
+            border: 1px solid #e10600;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .contact-info h2 {
+            color: #e10600;
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+        
+        .contact-item:last-child {
+            margin-bottom: 0;
+        }
+        
+        .icon {
+            margin-right: 10px;
+            font-size: 1.2rem;
+        }
+        
+        .retry-btn {
+            background: #e10600;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        
+        .retry-btn:hover {
+            background: #c50500;
+        }
+        
+        .offline-icon {
+            font-size: 4rem;
+            margin-bottom: 20px;
+            opacity: 0.7;
+        }
+        
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+            
+            p {
+                font-size: 1rem;
+            }
+            
+            .contact-item {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="offline-container">
+        <div class="offline-icon">📡</div>
+        
+        <div class="logo">BS</div>
+        
+        <h1>You're Offline</h1>
+        
+        <p>It looks like you've lost your internet connection. Don't worry - you can still contact us directly!</p>
+        
+        <div class="contact-info">
+            <h2>Emergency Contact</h2>
+            
+            <div class="contact-item">
+                <span class="icon">📞</span>
+                <span>+61 451 612 742</span>
+            </div>
+            
+            <div class="contact-item">
+                <span class="icon">💬</span>
+                <span>WhatsApp Available</span>
+            </div>
+            
+            <div class="contact-item">
+                <span class="icon">📧</span>
+                <span>hello@dldemolition.com.au</span>
+            </div>
+        </div>
+        
+        <p><strong>24/7 Emergency Response</strong><br>
+        We respond within 2 hours across Gold Coast to Sunshine Coast</p>
+        
+        <button class="retry-btn" onclick="window.location.reload()">
+            Try Again
+        </button>
+    </div>
+    
+    <script>
+        // Auto-retry when connection is restored
+        window.addEventListener('online', function() {
+            window.location.reload();
+        });
+        
+        // Check connection status
+        function checkConnection() {
+            if (navigator.onLine) {
+                window.location.reload();
+            }
+        }
+        
+        // Check every 30 seconds
+        setInterval(checkConnection, 30000);
+    </script>
+</body>
+</html>
+

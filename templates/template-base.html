@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en-AU" class="scroll-smooth">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- PAGE_TITLE -->
+  <!-- PAGE_META -->
+  <meta name="robots" content="index,follow" />
+  <meta name="theme-color" content="#e10600" />
+  <!-- PAGE_CANONICAL -->
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon_icon.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon_icon.png" />
+  <link rel="apple-touch-icon" href="assets/images/logo_symbol_only.png" />
+
+  <!-- Open Graph -->
+  <!-- PAGE_OG -->
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_AU" />
+
+  <!-- Schema.org Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Breathe Safe Demolition and Asbestos Removal",
+    "description": "Licensed asbestos removal specialists and demolition experts serving Gold Coast to Sunshine Coast",
+    "url": "https://breathesafe.com.au",
+    "telephone": "+61451612742",
+    "address": {
+      "@type": "PostalAddress",
+      "addressRegion": "Queensland",
+      "addressCountry": "AU"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -28.0167,
+      "longitude": 153.4000
+    },
+    "areaServed": [
+      {
+        "@type": "City",
+        "name": "Gold Coast"
+      },
+      {
+        "@type": "City", 
+        "name": "Sunshine Coast"
+      },
+      {
+        "@type": "City",
+        "name": "Brisbane"
+      }
+    ],
+    "serviceType": [
+      "Asbestos Removal",
+      "Demolition Services", 
+      "Floor Grinding",
+      "Tile Removal"
+    ],
+    "priceRange": "$$",
+    "openingHours": "Mo-Su 00:00-23:59"
+  }
+  </script>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { 
+            brand: {
+              black: '#0c0c0c', 
+              red: '#e10600', 
+              white: '#ffffff', 
+              gray: '#111216', 
+              green: '#25D366',
+              lightgray: '#f8f9fa',
+              orange: '#FF6B35'
+            } 
+          },
+          boxShadow: { 
+            soft: '0 10px 25px rgba(0,0,0,.15)',
+            glow: '0 0 20px rgba(225, 6, 0, 0.3)',
+            'glow-orange': '0 0 20px rgba(255, 107, 53, 0.4)'
+          },
+          animation: {
+            'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+            'bounce-slow': 'bounce 2s infinite',
+            'fade-in': 'fadeIn 0.6s ease-out',
+            'slide-up': 'slideUp 0.8s ease-out',
+            'float': 'float 3s ease-in-out infinite'
+          },
+          keyframes: {
+            fadeIn: {
+              '0%': { opacity: '0', transform: 'translateY(20px)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' }
+            },
+            slideUp: {
+              '0%': { opacity: '0', transform: 'translateY(40px)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' }
+            },
+            float: {
+              '0%, 100%': { transform: 'translateY(0px)' },
+              '50%': { transform: 'translateY(-10px)' }
+            }
+          }
+        }
+      }
+    }
+  </script>
+  
+  <!-- Font Awesome -->
+  <link 
+    rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" 
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" 
+  />
+  
+  <!-- Custom Styles -->
+  <style>
+    .glass {
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+    }
+    
+    .gradient-text {
+      background: linear-gradient(135deg, #e10600, #ff6b35);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    
+    .hero-pattern {
+      background-image: 
+        radial-gradient(circle at 25% 25%, rgba(225, 6, 0, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 75% 75%, rgba(255, 107, 53, 0.1) 0%, transparent 50%);
+    }
+    
+    .service-card {
+      transition: all 0.3s ease;
+    }
+    
+    .service-card:hover {
+      transform: translateY(-5px);
+    }
+    
+    @media (max-width: 768px) {
+      .mobile-menu {
+        transform: translateX(-100%);
+        transition: transform 0.3s ease;
+      }
+      
+      .mobile-menu.open {
+        transform: translateX(0);
+      }
+    }
+  </style>
+</head>
+
+<body class="bg-brand-black text-white font-sans">
+  <!-- Emergency Banner -->
+  <div class="bg-brand-red text-white py-2 px-4 text-center text-sm font-semibold animate-pulse-slow">
+    <i class="fas fa-exclamation-triangle mr-2"></i>
+    EMERGENCY 24/7 - Response within 2 hours across the region!
+    <a href="tel:+61451612742" class="ml-4 bg-white text-brand-red px-3 py-1 rounded-full text-xs font-bold hover:bg-brand-lightgray transition-colors">
+      <i class="fas fa-phone mr-1"></i>Call Now
+    </a>
+    <a href="https://wa.me/61451612742?text=Hello!%20I%20have%20an%20emergency%20asbestos%20situation" class="ml-2 bg-brand-green text-white px-3 py-1 rounded-full text-xs font-bold hover:bg-green-600 transition-colors">
+      <i class="fab fa-whatsapp mr-1"></i>WhatsApp
+    </a>
+  </div>
+
+  <!-- Header -->
+  <header class="bg-brand-gray/95 backdrop-blur-sm sticky top-0 z-50 border-b border-brand-red/20">
+    <div class="container mx-auto px-4">
+      <div class="flex items-center justify-between py-4">
+        <!-- Logo -->
+        <div class="flex items-center space-x-3">
+          <a href="/" class="flex items-center space-x-3">
+            <img src="assets/images/logo_header_optimized.png" alt="Breathe Safe Logo" class="h-12 w-auto">
+<div class="hidden sm:block">
+              <div class="text-brand-red font-bold text-lg">DL</div>
+              <div class="text-white text-xs">Demolition and asbestos experts</div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden lg:flex items-center space-x-8">
+          <a href="/" class="text-white hover:text-brand-red transition-colors font-medium">Home</a>
+          <a href="/services" class="text-white hover:text-brand-red transition-colors font-medium">Services</a>
+          <a href="/calculator" class="text-white hover:text-brand-red transition-colors font-medium">Calculator</a>
+          <a href="/about" class="text-white hover:text-brand-red transition-colors font-medium">About</a>
+          <a href="/projects" class="text-white hover:text-brand-red transition-colors font-medium">Projects</a>
+          <a href="/reviews" class="text-white hover:text-brand-red transition-colors font-medium">Reviews</a>
+          <a href="/blog" class="text-white hover:text-brand-red transition-colors font-medium">Blog</a>
+        </nav>
+
+        <!-- Contact Info & CTA -->
+        <div class="hidden lg:flex items-center space-x-4">
+          <a href="tel:+61451612742" class="text-brand-red font-bold hover:text-white transition-colors">
+            <i class="fas fa-phone mr-2"></i>(61) 451 612 742
+          </a>
+          <a href="/quote" class="bg-brand-red text-white px-6 py-2 rounded-full font-bold hover:bg-red-700 transition-colors shadow-glow">
+            Free Quote
+          </a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button id="mobile-menu-btn" class="lg:hidden text-white hover:text-brand-red transition-colors">
+          <i class="fas fa-bars text-xl"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="mobile-menu lg:hidden fixed inset-y-0 left-0 w-80 bg-brand-gray z-50 shadow-xl">
+      <div class="p-6">
+        <div class="flex items-center justify-between mb-8">
+          <img src="assets/images/logo_header_optimized.png" alt="Breathe Safe" class="h-10">
+          <button id="close-mobile-menu" class="text-white hover:text-brand-red">
+            <i class="fas fa-times text-xl"></i>
+          </button>
+        </div>
+        
+        <nav class="space-y-4">
+          <a href="/" class="block text-white text-xl hover:text-brand-red transition-colors">Home</a>
+          <a href="/services" class="block text-white text-xl hover:text-brand-red transition-colors">Services</a>
+          <a href="/calculator" class="block text-white text-xl hover:text-brand-red transition-colors">Calculator</a>
+          <a href="/about" class="block text-white text-xl hover:text-brand-red transition-colors">About</a>
+          <a href="/projects" class="block text-white text-xl hover:text-brand-red transition-colors">Projects</a>
+          <a href="/reviews" class="block text-white text-xl hover:text-brand-red transition-colors">Reviews</a>
+          <a href="/blog" class="block text-white text-xl hover:text-brand-red transition-colors">Blog</a>
+          <a href="/quote" class="block text-white text-xl hover:text-brand-red transition-colors">Free Quote</a>
+        </nav>
+
+        <div class="mt-8 pt-8 border-t border-gray-600">
+          <a href="tel:+61451612742" class="block text-brand-red font-bold text-lg mb-4">
+            <i class="fas fa-phone mr-2"></i>(61) 451 612 742
+          </a>
+          <a href="https://wa.me/61451612742" class="block bg-brand-green text-white px-4 py-2 rounded-lg text-center font-bold">
+            <i class="fab fa-whatsapp mr-2"></i>WhatsApp Us
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Trust Badges -->
+  <div class="bg-brand-gray/50 py-3">
+    <div class="container mx-auto px-4">
+      <div class="flex items-center justify-center space-x-8 text-sm">
+        <div class="flex items-center space-x-2">
+          <i class="fas fa-shield-alt text-brand-red"></i>
+          <span>Insured • EPA Compliant • Certified</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PAGE_CONTENT -->
+
+  <!-- Footer -->
+  <footer class="bg-brand-gray border-t border-brand-red/20 py-12">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Company Info -->
+                <div class="flex flex-col items-center text-center">
+          <img src="assets/images/logo_header_optimized.png" alt="Breathe Safe" class="h-20 mb-4 mx-auto">
+
+          <p class="text-gray-400 mb-4 max-w-xs">
+            Licensed asbestos removal and demolition specialists serving Gold Coast to Sunshine Coast.
+          </p>
+
+          <div class="flex space-x-4">
+            <a href="#" class="text-gray-400 hover:text-brand-red transition-colors">
+              <i class="fab fa-facebook text-xl"></i>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-brand-red transition-colors">
+              <i class="fab fa-instagram text-xl"></i>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-brand-red transition-colors">
+              <i class="fab fa-linkedin text-xl"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="text-white font-bold mb-4">Quick Links</h4>
+          <ul class="space-y-2">
+            <li><a href="/" class="text-gray-400 hover:text-brand-red transition-colors">Home</a></li>
+            <li><a href="/services" class="text-gray-400 hover:text-brand-red transition-colors">Services</a></li>
+            <li><a href="/calculator" class="text-gray-400 hover:text-brand-red transition-colors">Calculator</a></li>
+            <li><a href="/about" class="text-gray-400 hover:text-brand-red transition-colors">About</a></li>
+            <li><a href="/projects" class="text-gray-400 hover:text-brand-red transition-colors">Projects</a></li>
+            <li><a href="/reviews" class="text-gray-400 hover:text-brand-red transition-colors">Reviews</a></li>
+          </ul>
+        </div>
+
+        <!-- Services -->
+        <div>
+          <h4 class="text-white font-bold mb-4">Services</h4>
+          <ul class="space-y-2">
+            <li><a href="/services#asbestos" class="text-gray-400 hover:text-brand-red transition-colors">Asbestos Removal</a></li>
+            <li><a href="/services#demolition" class="text-gray-400 hover:text-brand-red transition-colors">Demolition</a></li>
+            <li><a href="/services#floor" class="text-gray-400 hover:text-brand-red transition-colors">Floor Grinding</a></li>
+            <li><a href="/services#tile" class="text-gray-400 hover:text-brand-red transition-colors">Tile Removal</a></li>
+            <li><a href="/services#stripout" class="text-gray-400 hover:text-brand-red transition-colors">Strip Out</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div>
+          <h4 class="text-white font-bold mb-4">Contact</h4>
+          <div class="space-y-3">
+            <div class="flex items-center space-x-3">
+              <i class="fas fa-phone text-brand-red"></i>
+              <a href="tel:+61451612742" class="hover:text-brand-red transition-colors">(61) 451 612 742</a>
+            </div>
+            <div class="flex items-center space-x-3">
+              <i class="fab fa-whatsapp text-brand-green"></i>
+              <a href="https://wa.me/61451612742" class="hover:text-brand-red transition-colors">WhatsApp</a>
+            </div>
+            <div class="flex items-center space-x-3">
+              <i class="fas fa-envelope text-brand-red"></i>
+              <a href="mailto:hello@dldemolition.com.au" class="hover:text-brand-red transition-colors">hello@dldemolition.com.au</a>
+            </div>
+            <div class="flex items-center space-x-3">
+              <i class="fas fa-map-marker-alt text-brand-red"></i>
+              <span class="text-gray-400">Gold Coast to Sunshine Coast</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="border-t border-gray-600 mt-8 pt-8 text-center text-gray-400">
+        <p>&copy; 2024 DL Demolition And Asbestos Experts. All Rights Reserved.</p>
+        <p class="mt-2 text-sm">Licensed asbestos removalists | EPA compliant | Fully insured</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile Bottom Bar -->
+  <div class="lg:hidden fixed bottom-0 left-0 right-0 bg-brand-gray border-t border-brand-red/20 z-40">
+    <div class="flex items-center justify-around py-3">
+      <a href="tel:+61451612742" class="flex flex-col items-center space-y-1 text-white hover:text-brand-red transition-colors">
+        <i class="fas fa-phone text-lg"></i>
+        <span class="text-xs">Call</span>
+      </a>
+      <a href="https://wa.me/61451612742" class="flex flex-col items-center space-y-1 text-brand-green hover:text-green-400 transition-colors">
+        <i class="fab fa-whatsapp text-lg"></i>
+        <span class="text-xs">WhatsApp</span>
+      </a>
+      <a href="/quote" class="flex flex-col items-center space-y-1 bg-brand-red text-white px-4 py-2 rounded-lg hover:bg-red-700 transition-colors">
+        <i class="fas fa-quote-right text-lg"></i>
+        <span class="text-xs font-bold">Free Quote</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- WhatsApp Floating Button -->
+<a href="https://wa.me/61451612742?text=Hello!%20I%20would%20like%20to%20request%20a%20quote%20for%20asbestos%20removal/demolition" 
+   class="fixed bottom-20 lg:bottom-2 right-6 bg-brand-green text-white p-2 rounded-full shadow-lg hover:bg-green-600 transition-colors z-30 animate-bounce-slow"
+   aria-label="Contact us on WhatsApp">
+  <img src="assets/images/social.png" 
+       alt="Contact us on WhatsApp"
+       class="w-7 h-7 object-contain rounded-full">
+</a>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" 
+          class="fixed bottom-32 lg:bottom-20 right-6 bg-brand-red text-white p-3 rounded-full shadow-lg hover:bg-red-700 transition-all duration-300 opacity-0 invisible z-30"
+          aria-label="Back to top">
+          <img src="assets/images/arrow-up.png" 
+       alt="Contact us on WhatsApp"
+       class="w-5 h-5 object-contain rounded-full">
+  </button>
+
+  <!-- CHATBOT_PLACEHOLDER -->
+
+  <!-- JavaScript -->
+  <script>
+    // Mobile Menu Toggle
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const closeMobileMenu = document.getElementById('close-mobile-menu');
+
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.add('open');
+    });
+
+    closeMobileMenu.addEventListener('click', () => {
+      mobileMenu.classList.remove('open');
+    });
+
+    // Close mobile menu when clicking outside
+    document.addEventListener('click', (e) => {
+      if (!mobileMenu.contains(e.target) && !mobileMenuBtn.contains(e.target)) {
+        mobileMenu.classList.remove('open');
+      }
+    });
+
+    // Back to Top Button
+    const backToTopBtn = document.getElementById('back-to-top');
+    
+    window.addEventListener('scroll', () => {
+      if (window.pageYOffset > 300) {
+        backToTopBtn.classList.remove('opacity-0', 'invisible');
+        backToTopBtn.classList.add('opacity-100', 'visible');
+      } else {
+        backToTopBtn.classList.add('opacity-0', 'invisible');
+        backToTopBtn.classList.remove('opacity-100', 'visible');
+      }
+    });
+
+    backToTopBtn.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+
+    // ADDITIONAL_JS_PLACEHOLDER
+  </script>
+</body>
+</html>
+

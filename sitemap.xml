@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  
+  <!-- Homepage -->
+  <url>
+    <loc>https://breathesafe.com.au/</loc>
+    <lastmod>2025-08-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://breathesafe.com.au/assets/images/hero.webp</image:loc>
+      <image:title>Professional Asbestos Removal and Demolition Services</image:title>
+      <image:caption>Licensed specialists serving Gold Coast to Sunshine Coast</image:caption>
+    </image:image>
+  </url>
+  
+  <!-- Services Page -->
+  <url>
+    <loc>https://breathesafe.com.au/services</loc>
+    <lastmod>2025-08-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://breathesafe.com.au/assets/images/asbestos_professional.webp</image:loc>
+      <image:title>Professional Asbestos Removal Services</image:title>
+    </image:image>
+  </url>
+  
+  <!-- Calculator Page -->
+  <url>
+    <loc>https://breathesafe.com.au/calculator</loc>
+    <lastmod>2025-08-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- About Page -->
+  <url>
+    <loc>https://breathesafe.com.au/about</loc>
+    <lastmod>2025-08-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- Projects Page -->
+  <url>
+    <loc>https://breathesafe.com.au/projects</loc>
+    <lastmod>2025-08-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://breathesafe.com.au/assets/images/kitchen_renovation_professional.webp</image:loc>
+      <image:title>Kitchen Renovation Project</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://breathesafe.com.au/assets/images/office_after.webp</image:loc>
+      <image:title>Office Renovation Completed</image:title>
+    </image:image>
+  </url>
+  
+  <!-- Reviews Page -->
+  <url>
+    <loc>https://breathesafe.com.au/reviews</loc>
+    <lastmod>2025-08-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- Blog Page -->
+  <url>
+    <loc>https://breathesafe.com.au/blog</loc>
+    <lastmod>2025-08-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <!-- Quote Page -->
+  <url>
+    <loc>https://breathesafe.com.au/quote</loc>
+    <lastmod>2025-08-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- Service-specific pages (if created) -->
+  <url>
+    <loc>https://breathesafe.com.au/services/asbestos-removal</loc>
+    <lastmod>2025-08-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://breathesafe.com.au/services/demolition</loc>
+    <lastmod>2025-08-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://breathesafe.com.au/services/floor-grinding</loc>
+    <lastmod>2025-08-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://breathesafe.com.au/services/tile-removal</loc>
+    <lastmod>2025-08-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://breathesafe.com.au/services/strip-out</loc>
+    <lastmod>2025-08-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+</urlset>
+
