@@ -1,5 +1,5 @@
 // Advanced PWA Installation and Management
-// Breathe Safe PWA Features
+// DL Demolition PWA Features
 
 class BreatheSafePWA {
   constructor() {
@@ -107,7 +107,7 @@ class BreatheSafePWA {
     this.installButton.innerHTML = `
       <div class="flex items-center justify-between">
         <div class="flex-1">
-          <h3 class="font-bold text-sm">Install Breathe Safe App</h3>
+          <h3 class="font-bold text-sm">Install DL Demolition App</h3>
           <p class="text-xs opacity-90">Get quick access to quotes and services</p>
         </div>
         <div class="flex gap-2 ml-4">
@@ -255,7 +255,7 @@ class BreatheSafePWA {
     welcome.innerHTML = `
       <div class="bg-white rounded-lg p-6 max-w-sm mx-4 text-center">
         <div class="text-4xl mb-4">🎉</div>
-        <h2 class="text-xl font-bold text-gray-800 mb-2">Welcome to Breathe Safe!</h2>
+        <h2 class="text-xl font-bold text-gray-800 mb-2">Welcome to DL Demolition!</h2>
         <p class="text-gray-600 mb-4">App installed successfully. You can now access our services quickly from your home screen.</p>
         <button onclick="this.parentElement.parentElement.remove()" class="bg-brand-red text-white px-6 py-2 rounded-lg font-medium">
           Get Started
@@ -275,7 +275,7 @@ class BreatheSafePWA {
     if (navigator.share) {
       try {
         await navigator.share({
-          title: title || 'Breathe Safe - Professional Asbestos Removal',
+          title: title || 'DL Demolition - Professional Asbestos Removal',
           text: text || 'Licensed asbestos removal specialists serving Gold Coast to Sunshine Coast',
           url: url || window.location.href
         });

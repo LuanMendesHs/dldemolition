@@ -134,7 +134,7 @@ base_template = '''<!DOCTYPE html>
         <!-- Logo -->
         <div class="flex items-center space-x-3">
           <a href="/" class="flex items-center space-x-3">
-            <img src="assets/images/logo_header_optimized.png" alt="Breathe Safe Logo" class="h-12 w-auto">
+            <img src="assets/images/logo_header_optimized.png" alt="DL Demolition Logo" class="h-12 w-auto">
 <div class="hidden sm:block">
               <div class="text-brand-red font-bold text-lg">DL</div>
               <div class="text-white text-xs">Demolition and asbestos experts</div>
@@ -168,7 +168,7 @@ base_template = '''<!DOCTYPE html>
     <div id="mobile-menu" class="mobile-menu lg:hidden fixed inset-y-0 left-0 w-80 bg-brand-gray z-50 shadow-xl">
       <div class="p-6">
         <div class="flex items-center justify-between mb-8">
-          <img src="assets/images/logo_header_optimized.png" alt="Breathe Safe" class="h-10">
+          <img src="assets/images/logo_header_optimized.png" alt="DL Demolition" class="h-10">
           <button id="close-mobile-menu" class="text-white hover:text-brand-red">
             <i class="fas fa-times text-xl"></i>
           </button>
@@ -210,7 +210,7 @@ base_template = '''<!DOCTYPE html>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         <!-- Company Info -->
                 <div class="flex flex-col items-center text-center">
-          <img src="assets/images/logo_header_optimized.png" alt="Breathe Safe" class="h-20 mb-4 mx-auto">
+          <img src="assets/images/logo_header_optimized.png" alt="DL Demolition" class="h-28 mb-4 mx-auto">
 
           <p class="text-gray-400 mb-4 max-w-xs">
             Licensed asbestos removal and demolition specialists serving Gold Coast to Sunshine Coast.
@@ -304,21 +304,17 @@ base_template = '''<!DOCTYPE html>
   </div>
 
   <!-- WhatsApp Floating Button -->
-<a href="https://wa.me/61451612742?text=Hello!%20I%20would%20like%20to%20request%20a%20quote%20for%20asbestos%20removal/demolition" 
-   class="fixed bottom-20 lg:bottom-2 right-6 bg-brand-green text-white p-2 rounded-full shadow-lg hover:bg-green-600 transition-colors z-30 animate-bounce-slow"
-   aria-label="Contact us on WhatsApp">
-  <img src="assets/images/social.png" 
-       alt="Contact us on WhatsApp"
-       class="w-7 h-7 object-contain rounded-full">
-</a>
+  <a href="https://wa.me/61432293589?text=Hello!%20I%20would%20like%20to%20request%20a%20quote%20for%20asbestos%20removal/demolition"
+    class="fixed bottom-6 right-6 bg-green-500 text-white rounded-full w-14 h-14 flex items-center justify-center shadow-lg hover:bg-green-600 transition-colors z-50"
+    aria-label="Contact us on WhatsApp">
+    <i class="fab fa-whatsapp text-2xl"></i>
+  </a>
 
   <!-- Back to Top Button -->
-  <button id="back-to-top" 
-          class="fixed bottom-32 lg:bottom-20 right-6 bg-brand-red text-white p-3 rounded-full shadow-lg hover:bg-red-700 transition-all duration-300 opacity-0 invisible z-30"
-          aria-label="Back to top">
-          <img src="assets/images/arrow-up.png" 
-       alt="Contact us on WhatsApp"
-       class="w-5 h-5 object-contain rounded-full">
+  <button id="back-to-top"
+    class="fixed bottom-32 lg:bottom-24 right-6 bg-brand-red text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:bg-red-700 transition-all duration-300 opacity-0 invisible z-30"
+    aria-label="Back to top">
+    <i class="fas fa-chevron-up text-2xl"></i>
   </button>
 
   <!-- JavaScript -->
@@ -385,38 +381,38 @@ base_template = '''<!DOCTYPE html>
 # Configurações das páginas
 pages = {
     'calculator.html': {
-        'title': '<title>Price Calculator | Breathe Safe Asbestos Removal & Demolition</title>',
+        'title': '<title>Price Calculator | DL Demolition Asbestos Removal & Demolition</title>',
         'meta': '<meta name="description" content="Get instant price estimates for asbestos removal, demolition, and floor grinding services. Professional calculator with transparent pricing for Gold Coast to Sunshine Coast." />',
         'canonical': '<link rel="canonical" href="https://breathesafe.com.au/calculator" />',
-        'og': '<meta property="og:title" content="Price Calculator | Breathe Safe" /><meta property="og:description" content="Get instant price estimates for professional asbestos removal and demolition services." />',
+        'og': '<meta property="og:title" content="Price Calculator | DL Demolition" /><meta property="og:description" content="Get instant price estimates for professional asbestos removal and demolition services." />',
         'active_page': 'calculator.html'
     },
     'about.html': {
-        'title': '<title>About Breathe Safe | Licensed Asbestos Removal Specialists</title>',
-        'meta': '<meta name="description" content="Learn about Breathe Safe - licensed asbestos removal specialists with 100+ completed projects. EPA compliant, fully insured, serving Gold Coast to Sunshine Coast." />',
+        'title': '<title>About DL Demolition | Licensed Asbestos Removal Specialists</title>',
+        'meta': '<meta name="description" content="Learn about DL Demolition - licensed asbestos removal specialists with 100+ completed projects. EPA compliant, fully insured, serving Gold Coast to Sunshine Coast." />',
         'canonical': '<link rel="canonical" href="https://breathesafe.com.au/about" />',
-        'og': '<meta property="og:title" content="About Breathe Safe | Licensed Specialists" /><meta property="og:description" content="Licensed asbestos removal specialists with 100+ completed projects and zero accidents." />',
+        'og': '<meta property="og:title" content="About DL Demolition | Licensed Specialists" /><meta property="og:description" content="Licensed asbestos removal specialists with 100+ completed projects and zero accidents." />',
         'active_page': 'about.html'
     },
     'projects.html': {
-        'title': '<title>Completed Projects | Breathe Safe Asbestos Removal Gallery</title>',
+        'title': '<title>Completed Projects | DL Demolition Asbestos Removal Gallery</title>',
         'meta': '<meta name="description" content="View our completed asbestos removal and demolition projects across Gold Coast to Sunshine Coast. Before & after photos, case studies, and client testimonials." />',
         'canonical': '<link rel="canonical" href="https://breathesafe.com.au/projects" />',
-        'og': '<meta property="og:title" content="Completed Projects | Breathe Safe" /><meta property="og:description" content="View our professional asbestos removal and demolition projects with before & after photos." />',
+        'og': '<meta property="og:title" content="Completed Projects | DL Demolition" /><meta property="og:description" content="View our professional asbestos removal and demolition projects with before & after photos." />',
         'active_page': 'projects.html'
     },
     'reviews.html': {
-        'title': '<title>Client Reviews & Testimonials | Breathe Safe</title>',
-        'meta': '<meta name="description" content="Read genuine client reviews and testimonials for Breathe Safe asbestos removal and demolition services. 4.8/5 stars with 85+ verified reviews." />',
+        'title': '<title>Client Reviews & Testimonials | DL Demolition</title>',
+        'meta': '<meta name="description" content="Read genuine client reviews and testimonials for DL Demolition asbestos removal and demolition services. 4.8/5 stars with 85+ verified reviews." />',
         'canonical': '<link rel="canonical" href="https://breathesafe.com.au/reviews" />',
-        'og': '<meta property="og:title" content="Client Reviews | Breathe Safe" /><meta property="og:description" content="4.8/5 stars with 85+ verified reviews from satisfied clients across Gold Coast to Sunshine Coast." />',
+        'og': '<meta property="og:title" content="Client Reviews | DL Demolition" /><meta property="og:description" content="4.8/5 stars with 85+ verified reviews from satisfied clients across Gold Coast to Sunshine Coast." />',
         'active_page': 'reviews.html'
     },
     'quote.html': {
-        'title': '<title>Free Quote Request | Breathe Safe Asbestos Removal</title>',
+        'title': '<title>Free Quote Request | DL Demolition Asbestos Removal</title>',
         'meta': '<meta name="description" content="Request your free quote for asbestos removal, demolition, or floor grinding services. Guaranteed response within 24 hours. Serving Gold Coast to Sunshine Coast." />',
         'canonical': '<link rel="canonical" href="https://breathesafe.com.au/quote" />',
-        'og': '<meta property="og:title" content="Free Quote Request | Breathe Safe" /><meta property="og:description" content="Get your free quote with guaranteed response within 24 hours." />',
+        'og': '<meta property="og:title" content="Free Quote Request | DL Demolition" /><meta property="og:description" content="Get your free quote with guaranteed response within 24 hours." />',
         'active_page': 'quote.html'
     }
 }
@@ -613,7 +609,7 @@ contents = {
     <div class="container mx-auto px-4">
       <div class="text-center max-w-4xl mx-auto">
         <h1 class="text-4xl lg:text-6xl font-bold text-white mb-6">
-          About <span class="text-brand-red">Breathe Safe</span>
+          About <span class="text-brand-red">DL Demolition</span>
         </h1>
         <p class="text-xl text-gray-300 mb-8 leading-relaxed">
           Licensed asbestos removal specialists with over 3 years of experience and 100+ completed projects. 
@@ -630,7 +626,7 @@ contents = {
         <div>
           <h2 class="text-4xl font-bold text-white mb-6">Our Story</h2>
           <p class="text-xl text-gray-300 mb-6">
-            Breathe Safe was founded with a simple mission: to provide safe, professional, and reliable asbestos removal and demolition services across the Gold Coast to Sunshine Coast region.
+            DL Demolition was founded with a simple mission: to provide safe, professional, and reliable asbestos removal and demolition services across the Gold Coast to Sunshine Coast region.
           </p>
           <p class="text-gray-300 mb-6">
             With over 3 years of dedicated service and 100+ successfully completed projects, we've built our reputation on safety, professionalism, and customer satisfaction. Our team of licensed specialists follows all Australian safety protocols and regulations.
@@ -1032,7 +1028,7 @@ contents = {
             <i class="fas fa-star"></i>
           </div>
           <p class="text-gray-300 mb-4">
-            "Breathe Safe did an excellent job removing asbestos from our 1970s home. The team was professional, punctual, and explained everything clearly. Highly recommend!"
+            "DL Demolition did an excellent job removing asbestos from our 1970s home. The team was professional, punctual, and explained everything clearly. Highly recommend!"
           </p>
           <div class="flex items-center space-x-3">
             <div class="w-10 h-10 bg-brand-red rounded-full flex items-center justify-center">
@@ -1216,7 +1212,7 @@ contents = {
             <i class="fas fa-star"></i>
           </div>
           <p class="text-gray-300 mb-4">
-            "Breathe Safe exceeded our expectations. Professional, safe, and thorough. The clearance certificate was provided promptly. Couldn't be happier!"
+            "DL Demolition exceeded our expectations. Professional, safe, and thorough. The clearance certificate was provided promptly. Couldn't be happier!"
           </p>
           <div class="flex items-center space-x-3">
             <div class="w-10 h-10 bg-brand-red rounded-full flex items-center justify-center">
@@ -1276,7 +1272,7 @@ contents = {
       <div class="max-w-2xl mx-auto text-center">
         <h2 class="text-4xl font-bold text-white mb-6">Share Your Experience</h2>
         <p class="text-xl text-gray-300 mb-8">
-          We'd love to hear about your experience with Breathe Safe. Your feedback helps us continue to improve our services.
+          We'd love to hear about your experience with DL Demolition. Your feedback helps us continue to improve our services.
         </p>
         
         <div class="bg-brand-gray/30 rounded-2xl p-8 border border-white/10">
@@ -1462,7 +1458,7 @@ contents = {
             <div class="flex items-start space-x-3">
               <input type="checkbox" id="agree" name="agree" required class="mt-1 rounded">
               <label for="agree" class="text-sm text-gray-300">
-                I agree to be contacted by Breathe Safe regarding this quote request. I understand that providing accurate information will help ensure an accurate quote. Your information is secure and will not be shared with third parties.
+                I agree to be contacted by DL Demolition regarding this quote request. I understand that providing accurate information will help ensure an accurate quote. Your information is secure and will not be shared with third parties.
               </label>
             </div>
             

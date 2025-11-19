@@ -1,7 +1,7 @@
-# Breathe Safe - Site Melhorado
+# DL Demolition - Site Melhorado
 
 ## Visão Geral
-Site profissional completamente redesenhado para a Breathe Safe Asbestos Removal & Demolition, focado em maximizar conversões de clientes na região de Gold Coast até Sunshine Coast.
+Site profissional completamente redesenhado para a DL Demolition Asbestos Removal & Demolition, focado em maximizar conversões de clientes na região de Gold Coast até Sunshine Coast.
 
 ## Melhorias Implementadas
 

@@ -1,4 +1,4 @@
-// Formspree Configuration for Breathe Safe
+// Formspree Configuration for DL Demolition
 // Replace 'YOUR_FORM_ID' with actual Formspree form ID
 
 const FORMSPREE_CONFIG = {

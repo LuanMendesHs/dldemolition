@@ -1,4 +1,4 @@
-# BLOG CONTENT STRATEGY - BREATHE SAFE
+# BLOG CONTENT STRATEGY - DL Demolition
 
 ## 🎯 **SEO STRATEGY OVERVIEW**
 
@@ -224,5 +224,5 @@
 - Building inspector partnerships
 - Local business cross-promotion
 
-This comprehensive content strategy positions Breathe Safe as the authoritative source for asbestos removal and demolition information in Queensland, driving both organic traffic and qualified leads through valuable, SEO-optimized content.
+This comprehensive content strategy positions DL Demolition as the authoritative source for asbestos removal and demolition information in Queensland, driving both organic traffic and qualified leads through valuable, SEO-optimized content.
 

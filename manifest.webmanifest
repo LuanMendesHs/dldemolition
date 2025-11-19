@@ -1,6 +1,6 @@
 {
-  "name": "Breathe Safe — Asbestos & Demolition",
-  "short_name": "Breathe Safe",
+  "name": "DL Demolition — Asbestos & Demolition",
+  "short_name": "DL Demolition",
   "description": "Licensed asbestos removal and demolition specialists serving Gold Coast to Sunshine Coast. EPA compliant, fully insured.",
   "start_url": "/",
   "display": "standalone",
@@ -16,14 +16,14 @@
       "sizes": "390x844",
       "type": "image/png",
       "form_factor": "narrow",
-      "label": "Mobile view of Breathe Safe homepage"
+      "label": "Mobile view of DL Demolition homepage"
     },
     {
       "src": "assets/images/screenshot-desktop.png",
       "sizes": "1280x720",
       "type": "image/png",
       "form_factor": "wide",
-      "label": "Desktop view of Breathe Safe homepage"
+      "label": "Desktop view of DL Demolition homepage"
     }
   ],
   "icons": [

@@ -1,4 +1,4 @@
-// Form Validation for Breathe Safe Website
+// Form Validation for DL Demolition Website
 // Enhanced validation with Australian phone number support
 
 class FormValidator {
@@ -196,7 +196,7 @@ class FormValidator {
   }
 
   formatWhatsAppMessage(data) {
-    let message = "🏗️ *New Quote Request - Breathe Safe*\n\n";
+    let message = "🏗️ *New Quote Request - DL Demolition*\n\n";
     
     if (data.name || data.fullName) {
       message += `👤 *Name:* ${data.name || data.fullName}\n`;

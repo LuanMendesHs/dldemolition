@@ -1,4 +1,4 @@
-// Conversion Optimization for Breathe Safe Website
+// Conversion Optimization for DL Demolition Website
 // Advanced techniques to maximize lead generation and sales
 
 class ConversionOptimizer {
@@ -382,7 +382,7 @@ class ConversionOptimizer {
         <div class="chatbot-header bg-red-600 text-white p-4 rounded-t-lg">
           <div class="flex items-center justify-between">
             <div>
-              <div class="font-bold">Breathe Safe Assistant</div>
+              <div class="font-bold">DL Demolition Assistant</div>
               <div class="text-sm opacity-90">Get instant answers</div>
             </div>
             <button class="close-chatbot text-white hover:text-gray-200">

@@ -1,4 +1,4 @@
-# Breathe Safe Asbestos & Demolition Website
+# DL Demolition Asbestos & Demolition Website
 
 Professional website for asbestos removal and demolition services across Gold Coast to Sunshine Coast.
 
@@ -175,7 +175,7 @@ breathe_safe_website/
 
 ## 📝 License
 
-© 2024 Breathe Safe Asbestos & Demolition. All rights reserved.
+© 2024 DL Demolition Asbestos & Demolition. All rights reserved.
 
 ---
 

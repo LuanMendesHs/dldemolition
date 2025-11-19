@@ -1,4 +1,4 @@
-// Mobile Optimization for Breathe Safe Website
+// Mobile Optimization for DL Demolition Website
 // iOS Safari and Android Chrome specific optimizations
 
 class MobileOptimizer {
@@ -261,7 +261,7 @@ class MobileOptimizer {
         <div class="flex items-center">
           <i class="fas fa-mobile-alt mr-3 text-xl"></i>
           <div>
-            <div class="font-bold text-sm">Install Breathe Safe App</div>
+            <div class="font-bold text-sm">Install DL Demolition App</div>
             <div class="text-xs opacity-90">Quick access to quotes & services</div>
           </div>
         </div>

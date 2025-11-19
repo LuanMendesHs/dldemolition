@@ -1,4 +1,4 @@
-// Image optimization script for Breathe Safe website
+// Image optimization script for DL Demolition website
 // Adds lazy loading, WebP support, and proper dimensions
 
 function optimizeImages() {

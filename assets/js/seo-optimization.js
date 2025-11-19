@@ -1,4 +1,4 @@
-// SEO Optimization for Breathe Safe Website
+// SEO Optimization for DL Demolition Website
 // Advanced SEO techniques for maximum search visibility
 
 class SEOOptimizer {
@@ -55,7 +55,7 @@ class SEOOptimizer {
       home: 'Professional asbestos removal & demolition services across Gold Coast to Sunshine Coast. Licensed, insured & EPA compliant. Free quotes, 24/7 emergency response. Call (61) 451 612 742.',
       calculator: 'Get instant pricing for asbestos removal & demolition services. Free calculator with accurate estimates for Gold Coast, Sunshine Coast & Brisbane. Licensed professionals.',
       services: 'Complete asbestos removal, demolition & floor preparation services. EPA licensed, fully insured. Residential & commercial projects across Gold Coast to Sunshine Coast.',
-      about: 'Breathe Safe: Gold Coast\'s trusted asbestos removal & demolition experts. EPA licensed, Fully Insured, 100+ completed projects. Professional, safe & reliable service.',
+      about: 'DL Demolition: Gold Coast\'s trusted asbestos removal & demolition experts. EPA licensed, Fully Insured, 100+ completed projects. Professional, safe & reliable service.',
       projects: 'View our completed asbestos removal & demolition projects across Gold Coast & Sunshine Coast. Before/after photos, client testimonials & case studies.',
       reviews: 'Read genuine reviews from 100+ satisfied customers. 4.8/5 star rating for asbestos removal & demolition services across Gold Coast to Sunshine Coast.',
       blog: 'Expert advice on asbestos removal, demolition safety & regulations. Latest industry news, tips & guides from Gold Coast\'s leading specialists.',
@@ -98,7 +98,7 @@ class SEOOptimizer {
       'og:description': this.generateMetaDescription(pageType),
       'og:type': 'website',
       'og:url': window.location.href,
-      'og:site_name': 'Breathe Safe Asbestos & Demolition',
+      'og:site_name': 'DL Demolition Asbestos & Demolition',
       'og:image': `${window.location.origin}/assets/images/og-image.jpg`,
       'og:image:width': '1200',
       'og:image:height': '630',
@@ -158,7 +158,7 @@ class SEOOptimizer {
     const structuredData = {
       '@context': 'https://schema.org',
       '@type': 'LocalBusiness',
-      'name': 'Breathe Safe Asbestos & Demolition',
+      'name': 'DL Demolition Asbestos & Demolition',
       'description': 'Professional asbestos removal and demolition services across Gold Coast to Sunshine Coast',
       'url': window.location.origin,
       'telephone': '+61451612742',
@@ -348,16 +348,16 @@ class SEOOptimizer {
     const src = img.src.toLowerCase();
     const pageType = this.detectPageType();
     
-    if (src.includes('logo')) return 'Breathe Safe Asbestos & Demolition Logo';
+    if (src.includes('logo')) return 'DL Demolition Asbestos & Demolition Logo';
     if (src.includes('hero')) return 'Professional asbestos removal and demolition services Gold Coast';
     if (src.includes('asbestos')) return 'Safe asbestos removal by licensed professionals';
     if (src.includes('demolition')) return 'Professional demolition services Gold Coast';
     if (src.includes('before')) return 'Before asbestos removal and renovation project';
     if (src.includes('after')) return 'After professional renovation and asbestos removal';
-    if (src.includes('team')) return 'Breathe Safe professional asbestos removal team';
+    if (src.includes('team')) return 'DL Demolition professional asbestos removal team';
     if (src.includes('equipment')) return 'Professional asbestos removal equipment and safety gear';
     
-    return `${pageType} - Breathe Safe Asbestos & Demolition`;
+    return `${pageType} - DL Demolition Asbestos & Demolition`;
   }
 
   setImageDimensions(img) {
@@ -463,7 +463,7 @@ class SEOOptimizer {
   generateBetterAnchorText(href) {
     if (href.includes('services')) return 'View Our Services';
     if (href.includes('calculator')) return 'Use Price Calculator';
-    if (href.includes('about')) return 'About Breathe Safe';
+    if (href.includes('about')) return 'About DL Demolition';
     if (href.includes('projects')) return 'View Our Projects';
     if (href.includes('reviews')) return 'Read Customer Reviews';
     if (href.includes('blog')) return 'Read Our Blog';

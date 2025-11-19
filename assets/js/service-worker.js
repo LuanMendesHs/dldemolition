@@ -1,4 +1,4 @@
-// Breathe Safe Service Worker
+// DL Demolition Service Worker
 // Version 1.0.0
 
 const CACHE_NAME = 'breathe-safe-v1.0.0';
