@@ -18,17 +18,6 @@
   <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon_icon.png" />
   <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png" />
 
-  <!-- PWA Manifest -->
-  <link rel="manifest" href="manifest.webmanifest" />
-
-  <!-- iOS PWA Meta Tags -->
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-  <meta name="apple-mobile-web-app-title" content="DL Demolition" />
-
-  <!-- Windows PWA -->
-  <meta name="msapplication-TileColor" content="#e10600" />
-  <meta name="msapplication-config" content="browserconfig.xml" />
 
   <!-- Open Graph -->
   <meta property="og:title" content="DL Demolition - Professional Demolition & Asbestos Removal" />
@@ -160,7 +149,6 @@
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="assets/js/formspree-config.js" defer></script>
-  <script src="assets/js/pwa-install.js" defer></script>
   <script src="assets/js/form-validation.js" defer></script>
   <script>
     tailwind.config = {
@@ -245,7 +233,7 @@
       transform: translateY(-5px);
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 1023px) {
       .mobile-menu {
         transform: translateX(-100%);
         transition: transform 0.3s ease;
@@ -261,16 +249,19 @@
 <body class="bg-brand-black text-white font-sans">
   <!-- Emergency Banner -->
   <div class="bg-brand-red text-white py-2 px-4 text-center text-sm font-semibold animate-pulse-slow">
-    <i class="fas fa-exclamation-triangle mr-2"></i>
-    EMERGENCY 24/7 - Response within 2 hours across the region!
-    <a href="tel:+61451612742"
-      class="ml-4 bg-white text-brand-red px-3 py-1 rounded-full text-xs font-bold hover:bg-brand-lightgray transition-colors">
-      <i class="fas fa-phone mr-1"></i>Call Now
-    </a>
-    <a href="https://wa.me/61451612742?text=Hello!%20I%20have%20an%20emergency%20asbestos%20situation"
-      class="ml-2 bg-brand-green text-white px-3 py-1 rounded-full text-xs font-bold hover:bg-green-600 transition-colors">
-      <i class="fab fa-whatsapp mr-1"></i>WhatsApp
-    </a>
+    <div class="flex flex-wrap items-center justify-center gap-2">
+      <span class="whitespace-nowrap"><i class="fas fa-exclamation-triangle mr-1"></i>EMERGENCY 24/7 - 2hr Response!</span>
+      <div class="flex gap-2 flex-shrink-0">
+        <a href="tel:+61451612742"
+          class="inline-flex items-center justify-center gap-1 bg-white text-brand-red px-3 py-1 rounded-full text-xs font-bold hover:bg-brand-lightgray transition-colors whitespace-nowrap">
+          <i class="fas fa-phone"></i>Call Now
+        </a>
+        <a href="https://wa.me/61451612742?text=Hello!%20I%20have%20an%20emergency%20asbestos%20situation"
+          class="inline-flex items-center justify-center gap-1 bg-brand-green text-white px-3 py-1 rounded-full text-xs font-bold hover:bg-green-600 transition-colors whitespace-nowrap">
+          <i class="fab fa-whatsapp"></i>WhatsApp
+        </a>
+      </div>
+    </div>
   </div>
 
   <!-- Header -->
@@ -280,7 +271,7 @@
         <!-- Logo -->
         <div class="flex items-center space-x-3">
           <a href="/" class="flex items-center space-x-3">
-            <img src="assets/images/logo_header_optimized.png" alt="DL Demolition Logo" class="h-20 w-auto">
+            <img src="assets/images/logo_header_optimized.png" alt="DL Demolition Logo" class="h-12 md:h-16 lg:h-20 w-auto">
           </a>
         </div>
 
@@ -314,40 +305,43 @@
       </div>
     </div>
 
-    <!-- Mobile Menu -->
-    <div id="mobile-menu" class="mobile-menu lg:hidden fixed inset-y-0 left-0 w-80 bg-brand-gray z-50 shadow-xl">
-      <div class="p-6">
-        <div class="flex items-center justify-between mb-8">
-          <img src="assets/images/logo_header_optimized.png" alt="DL Demolition" class="h-10">
-          <button id="close-mobile-menu" class="text-white hover:text-brand-red">
-            <i class="fas fa-times text-xl"></i>
-          </button>
-        </div>
+  </header>
 
-        <nav class="space-y-4">
-          <a href="/" class="block text-brand-red text-xl font-bold">Home</a>
-          <a href="services.html" class="block text-white text-xl hover:text-brand-red transition-colors">Services</a>
-          <a href="calculator.html"
-            class="block text-white text-xl hover:text-brand-red transition-colors">Calculator</a>
-          <a href="about.html" class="block text-white text-xl hover:text-brand-red transition-colors">About</a>
-          <a href="projects.html" class="block text-white text-xl hover:text-brand-red transition-colors">Projects</a>
-          <a href="reviews.html" class="block text-white text-xl hover:text-brand-red transition-colors">Reviews</a>
-          <a href="blog.html" class="block text-white text-xl hover:text-brand-red transition-colors">Blog</a>
-          <a href="quote.html" class="block text-white text-xl hover:text-brand-red transition-colors">Free Quote</a>
-        </nav>
+  <!-- Mobile Menu Overlay -->
+  <div id="mobile-menu-overlay" class="hidden fixed inset-0 bg-black/70 z-[9998] lg:hidden"></div>
 
-        <div class="mt-8 pt-8 border-t border-gray-600">
-          <a href="tel:+61451612742" class="block text-brand-red font-bold text-lg mb-4">
-            <i class="fas fa-phone mr-2"></i>(61) 451 612 742
-          </a>
-          <a href="https://wa.me/61451612742"
-            class="block bg-brand-green text-white px-4 py-2 rounded-lg text-center font-bold">
-            <i class="fab fa-whatsapp mr-2"></i>WhatsApp Us
-          </a>
-        </div>
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="mobile-menu lg:hidden fixed inset-y-0 left-0 w-80 bg-brand-gray z-[9999] shadow-xl overflow-y-auto">
+    <div class="p-6">
+      <div class="flex items-center justify-between mb-8">
+        <img src="assets/images/logo_header_optimized.png" alt="DL Demolition" class="h-10">
+        <button id="close-mobile-menu" class="text-white hover:text-brand-red">
+          <i class="fas fa-times text-xl"></i>
+        </button>
+      </div>
+
+      <nav class="space-y-4">
+        <a href="/" class="block text-brand-red text-xl font-bold">Home</a>
+        <a href="services.html" class="block text-white text-xl hover:text-brand-red transition-colors">Services</a>
+        <a href="calculator.html" class="block text-white text-xl hover:text-brand-red transition-colors">Calculator</a>
+        <a href="about.html" class="block text-white text-xl hover:text-brand-red transition-colors">About</a>
+        <a href="projects.html" class="block text-white text-xl hover:text-brand-red transition-colors">Projects</a>
+        <a href="reviews.html" class="block text-white text-xl hover:text-brand-red transition-colors">Reviews</a>
+        <a href="blog.html" class="block text-white text-xl hover:text-brand-red transition-colors">Blog</a>
+        <a href="quote.html" class="block text-white text-xl hover:text-brand-red transition-colors">Free Quote</a>
+      </nav>
+
+      <div class="mt-8 pt-8 border-t border-gray-600">
+        <a href="tel:+61451612742" class="block text-brand-red font-bold text-lg mb-4">
+          <i class="fas fa-phone mr-2"></i>(61) 451 612 742
+        </a>
+        <a href="https://wa.me/61451612742"
+          class="block bg-brand-green text-white px-4 py-2 rounded-lg text-center font-bold">
+          <i class="fab fa-whatsapp mr-2"></i>WhatsApp Us
+        </a>
       </div>
     </div>
-  </header>
+  </div>
 
   <!-- Trust Badges -->
   <div class="bg-brand-gray/50 py-3">
@@ -859,7 +853,7 @@
 
   <!-- WhatsApp Floating Button -->
   <a href="https://wa.me/61451612742?text=Hello!%20I%20would%20like%20to%20request%20a%20quote%20for%20asbestos%20removal/demolition"
-    class="fixed bottom-6 right-6 bg-green-500 text-white rounded-full w-14 h-14 flex items-center justify-center shadow-lg hover:bg-green-600 transition-colors z-50"
+    class="hidden lg:flex fixed bottom-6 right-6 bg-green-500 text-white rounded-full w-14 h-14 items-center justify-center shadow-lg hover:bg-green-600 transition-colors z-50"
     aria-label="Contact us on WhatsApp">
     <i class="fab fa-whatsapp text-2xl"></i>
   </a>
@@ -871,7 +865,7 @@
     <i class="fas fa-chevron-up text-2xl"></i>
   </button>
   <!-- Chatbot -->
-  <div id="chatbot-container" class="fixed bottom-20 lg:bottom-6 left-6 z-40">
+  <div id="chatbot-container" class="fixed bottom-[90px] lg:bottom-6 left-6 z-40">
     <div id="chatbot-widget" class="bg-brand-gray rounded-lg shadow-xl border border-brand-red/20 w-80 h-96 hidden">
       <div class="bg-brand-red text-white p-4 rounded-t-lg flex items-center justify-between">
         <div class="flex items-center space-x-2">
@@ -938,21 +932,23 @@
     const mobileMenuBtn = document.getElementById('mobile-menu-btn');
     const mobileMenu = document.getElementById('mobile-menu');
     const closeMobileMenu = document.getElementById('close-mobile-menu');
+    const mobileMenuOverlay = document.getElementById('mobile-menu-overlay');
 
-    mobileMenuBtn.addEventListener('click', () => {
+    function openMobileMenu() {
       mobileMenu.classList.add('open');
-    });
+      mobileMenuOverlay.classList.remove('hidden');
+      document.body.classList.add('overflow-hidden');
+    }
 
-    closeMobileMenu.addEventListener('click', () => {
+    function closeMobileMenuFn() {
       mobileMenu.classList.remove('open');
-    });
+      mobileMenuOverlay.classList.add('hidden');
+      document.body.classList.remove('overflow-hidden');
+    }
 
-    // Close mobile menu when clicking outside
-    document.addEventListener('click', (e) => {
-      if (!mobileMenu.contains(e.target) && !mobileMenuBtn.contains(e.target)) {
-        mobileMenu.classList.remove('open');
-      }
-    });
+    mobileMenuBtn.addEventListener('click', openMobileMenu);
+    closeMobileMenu.addEventListener('click', closeMobileMenuFn);
+    mobileMenuOverlay.addEventListener('click', closeMobileMenuFn);
 
     // Back to Top Button
     const backToTopBtn = document.getElementById('back-to-top');

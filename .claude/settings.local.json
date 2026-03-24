@@ -1,7 +1,25 @@
 {
   "permissions": {
     "allow": [
-      "Bash(sed 's/.*\\\\.//')"
+      "Bash(sed 's/.*\\\\.//')",
+      "Bash(for f:*)",
+      "Bash(do sed:*)",
+      "Bash(echo \"Fixed CSS in $f\")",
+      "Bash(done)",
+      "Bash(echo \"Fixed logo in $f\")",
+      "Bash(where python:*)",
+      "Bash(where python3:*)",
+      "Bash(where py:*)",
+      "Bash(powershell -ExecutionPolicy Bypass -Command \":*)",
+      "Bash(powershell -ExecutionPolicy Bypass -File \"c:\\\\Users\\\\famil\\\\Documents\\\\Developer\\\\DL-Demolition-and-Asbestos-experts-main\\\\fix_pages.ps1\")",
+      "Bash(powershell -ExecutionPolicy Bypass -File \"c:\\\\Users\\\\famil\\\\Documents\\\\Developer\\\\DL-Demolition-and-Asbestos-experts-main\\\\restructure_menu.ps1\")",
+      "Bash(powershell -ExecutionPolicy Bypass -File \"c:\\\\Users\\\\famil\\\\Documents\\\\Developer\\\\DL-Demolition-and-Asbestos-experts-main\\\\fix_floats.ps1\")",
+      "Bash(do)",
+      "Bash(sed -i 's/class=\"\"bg-white text-brand-red px-3 py-1 rounded-full text-xs font-bold hover:bg-brand-lightgray transition-colors whitespace-nowrap\"\"/class=\"\"inline-flex items-center justify-center gap-1 bg-white text-brand-red px-3 py-1 rounded-full text-xs font-bold hover:bg-brand-lightgray transition-colors whitespace-nowrap\"\"/g' \"$f\")",
+      "Bash(sed -i 's/class=\"\"bg-brand-green text-white px-3 py-1 rounded-full text-xs font-bold hover:bg-green-600 transition-colors whitespace-nowrap\"\"/class=\"\"inline-flex items-center justify-center gap-1 bg-brand-green text-white px-3 py-1 rounded-full text-xs font-bold hover:bg-green-600 transition-colors whitespace-nowrap\"\"/g' \"$f\")",
+      "Bash(echo \"Fixed $f\")",
+      "Bash(sed -i 's/<i class=\"\"fas fa-phone mr-1\"\"><\\\\/i>Call Now/<i class=\"\"fas fa-phone\"\"><\\\\/i>Call Now/g' \"$f\")",
+      "Bash(sed -i 's/<i class=\"\"fab fa-whatsapp mr-1\"\"><\\\\/i>WhatsApp/<i class=\"\"fab fa-whatsapp\"\"><\\\\/i>WhatsApp/g' \"$f\")"
     ]
   }
 }
