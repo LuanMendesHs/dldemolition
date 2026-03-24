@@ -1,0 +1,170 @@
+# DL Demolition Website - Git Ignore File
+
+# Operating System Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dependencies
+node_modules/
+bower_components/
+vendor/
+
+# Build Files
+dist/
+build/
+.cache/
+*.min.js
+*.min.css
+
+# Environment Files
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+
+# Temporary Files
+tmp/
+temp/
+*.tmp
+*.bak
+*.backup
+
+# Image Optimization Cache
+.image-cache/
+optimized/
+
+# Analytics & Tracking (if stored locally)
+analytics/
+tracking/
+
+# Form Submissions (if stored locally)
+submissions/
+form-data/
+
+# Database Files (if any)
+*.db
+*.sqlite
+*.sqlite3
+
+# Sensitive Information
+secrets/
+credentials/
+*.key
+*.pem
+*.cert
+
+# Test Files
+test-results/
+coverage/
+.nyc_output/
+
+# Documentation Build
+docs/_build/
+docs/.doctrees/
+
+# Package Manager Files
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv
+
+# Backup Folder (already in repo, but ignore new backups)
+backup/*.backup
+
+# Local Development
+local/
+dev/
+
+# Service Worker Cache (generated)
+sw-cache/
+workbox-*.js
+
+# Performance Reports
+lighthouse-reports/
+performance-reports/
+
+# Error Reports
+error-reports/
+crash-logs/
+
+# User Uploaded Content (if any)
+uploads/
+user-content/
+
+# Compiled CSS (if using preprocessors)
+*.css.map
+*.sass.map
+*.scss.map
+
+# Archive Files
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+
+# Video Files (large)
+*.mp4
+*.avi
+*.mov
+*.wmv
+
+# Audio Files (large)
+*.mp3
+*.wav
+*.flac
+
+# Large Image Files (originals)
+originals/
+raw-images/
+
+# IDE Specific
+.phpintel/
+.php_cs.cache
+.php-cs-fixer.cache
+
+# Deployment Scripts (sensitive)
+deploy.sh
+deploy-prod.sh
+
+# Configuration Overrides
+config.local.js
+config.local.json
+
+# Keep empty directories
+!.gitkeep
