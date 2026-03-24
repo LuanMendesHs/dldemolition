@@ -19,7 +19,9 @@
       "Bash(sed -i 's/class=\"\"bg-brand-green text-white px-3 py-1 rounded-full text-xs font-bold hover:bg-green-600 transition-colors whitespace-nowrap\"\"/class=\"\"inline-flex items-center justify-center gap-1 bg-brand-green text-white px-3 py-1 rounded-full text-xs font-bold hover:bg-green-600 transition-colors whitespace-nowrap\"\"/g' \"$f\")",
       "Bash(echo \"Fixed $f\")",
       "Bash(sed -i 's/<i class=\"\"fas fa-phone mr-1\"\"><\\\\/i>Call Now/<i class=\"\"fas fa-phone\"\"><\\\\/i>Call Now/g' \"$f\")",
-      "Bash(sed -i 's/<i class=\"\"fab fa-whatsapp mr-1\"\"><\\\\/i>WhatsApp/<i class=\"\"fab fa-whatsapp\"\"><\\\\/i>WhatsApp/g' \"$f\")"
+      "Bash(sed -i 's/<i class=\"\"fab fa-whatsapp mr-1\"\"><\\\\/i>WhatsApp/<i class=\"\"fab fa-whatsapp\"\"><\\\\/i>WhatsApp/g' \"$f\")",
+      "Bash(grep \"favicon\" *.html)",
+      "Bash(grep -h 'wa.me' *.html)"
     ]
   }
 }
