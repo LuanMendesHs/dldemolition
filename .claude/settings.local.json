@@ -21,7 +21,13 @@
       "Bash(sed -i 's/<i class=\"\"fas fa-phone mr-1\"\"><\\\\/i>Call Now/<i class=\"\"fas fa-phone\"\"><\\\\/i>Call Now/g' \"$f\")",
       "Bash(sed -i 's/<i class=\"\"fab fa-whatsapp mr-1\"\"><\\\\/i>WhatsApp/<i class=\"\"fab fa-whatsapp\"\"><\\\\/i>WhatsApp/g' \"$f\")",
       "Bash(grep \"favicon\" *.html)",
-      "Bash(grep -h 'wa.me' *.html)"
+      "Bash(grep -h 'wa.me' *.html)",
+      "Bash(powershell -Command \":*)",
+      "Bash(python3 -c \":*)",
+      "Bash(python -c \":*)",
+      "Bash(/c/Users/famil/AppData/Roaming/uv/python/cpython-3.14.3-windows-x86_64-none/python.exe -c \":*)",
+      "Bash(wsl --version)",
+      "Bash(wsl which:*)"
     ]
   }
 }

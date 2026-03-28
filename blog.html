@@ -290,6 +290,7 @@
         <a href="calculator.html" class="text-white hover:text-brand-red transition-colors font-medium">Calculator</a>
         <a href="about.html" class="text-white hover:text-brand-red transition-colors font-medium">About</a>
         <a href="projects.html" class="text-white hover:text-brand-red transition-colors font-medium">Projects</a>
+        <a href="gallery.html" class="text-white hover:text-brand-red transition-colors font-medium">Gallery</a>
         <a href="reviews.html" class="text-white hover:text-brand-red transition-colors font-medium">Reviews</a>
 
         <!-- BLOG DESTACADO -->
@@ -311,7 +312,8 @@
       </div>
 
       <!-- Mobile Menu Button -->
-      <button id="mobile-menu-btn" class="lg:hidden text-white hover:text-brand-red transition-colors">
+      <button id="mobile-menu-btn" class="lg:hidden text-white hover:text-brand-red transition-colors"
+        onclick="document.getElementById('mobile-menu').style.transform='translateX(0)';document.getElementById('mobile-menu-overlay').style.display='block';document.body.style.overflow='hidden';">
         <i class="fas fa-bars text-xl"></i>
       </button>
 
@@ -321,14 +323,16 @@
 </header>
 
   <!-- Mobile Menu Overlay -->
-  <div id="mobile-menu-overlay" class="hidden fixed inset-0 bg-black/70 z-[9998] lg:hidden"></div>
+  <div id="mobile-menu-overlay" class="fixed inset-0 z-[9998]" style="display:none;background:rgba(0,0,0,0.7);"
+    onclick="document.getElementById('mobile-menu').style.transform='translateX(-100%)';this.style.display='none';document.body.style.overflow='';"></div>
 
   <!-- Mobile Menu -->
-  <div id="mobile-menu" class="mobile-menu lg:hidden fixed inset-y-0 left-0 w-80 bg-brand-gray z-[9999] shadow-xl overflow-y-auto">
+  <div id="mobile-menu" class="fixed inset-y-0 left-0 w-80 bg-brand-gray z-[9999] shadow-xl overflow-y-auto" style="transform:translateX(-100%);transition:transform 0.3s ease;background:#1a1a1a;">
     <div class="p-6">
       <div class="flex items-center justify-between mb-8">
         <img src="assets/images/logo_header_optimized.png" alt="DL Demolition" class="h-10">
-        <button id="close-mobile-menu" class="text-white hover:text-brand-red">
+        <button id="close-mobile-menu" class="text-white hover:text-brand-red"
+          onclick="document.getElementById('mobile-menu').style.transform='translateX(-100%)';document.getElementById('mobile-menu-overlay').style.display='none';document.body.style.overflow='';">
           <i class="fas fa-times text-xl"></i>
         </button>
       </div>
@@ -339,6 +343,7 @@
         <a href="calculator.html" class="block text-white text-xl hover:text-brand-red transition-colors">Calculator</a>
         <a href="about.html" class="block text-white text-xl hover:text-brand-red transition-colors">About</a>
         <a href="projects.html" class="block text-white text-xl hover:text-brand-red transition-colors">Projects</a>
+        <a href="gallery.html" class="block text-white text-xl hover:text-brand-red transition-colors">Gallery</a>
         <a href="reviews.html" class="block text-white text-xl hover:text-brand-red transition-colors">Reviews</a>
         <a href="blog.html" class="block text-brand-red text-xl font-bold">Blog</a>
         <a href="quote.html" class="block text-white text-xl hover:text-brand-red transition-colors">Free Quote</a>
@@ -934,32 +939,30 @@
 
   <script>
     // Mobile Menu Toggle
-    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-    const mobileMenu = document.getElementById('mobile-menu');
-    const mobileMenuClose = document.getElementById('close-mobile-menu');
-    const mobileMenuOverlay = document.getElementById('mobile-menu-overlay');
+    var mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    var mobileMenu = document.getElementById('mobile-menu');
+    var mobileMenuClose = document.getElementById('close-mobile-menu');
+    var mobileMenuOverlay = document.getElementById('mobile-menu-overlay');
 
     function openMobileMenu() {
-      mobileMenu.classList.add('open');
-      mobileMenuOverlay.classList.remove('hidden');
-      document.body.classList.add('overflow-hidden');
+      mobileMenu.style.transform = 'translateX(0)';
+      mobileMenuOverlay.style.display = 'block';
+      document.body.style.overflow = 'hidden';
     }
 
     function closeMobileMenuFn() {
-      mobileMenu.classList.remove('open');
-      mobileMenuOverlay.classList.add('hidden');
-      document.body.classList.remove('overflow-hidden');
+      mobileMenu.style.transform = 'translateX(-100%)';
+      mobileMenuOverlay.style.display = 'none';
+      document.body.style.overflow = '';
     }
 
-    mobileMenuBtn.addEventListener('click', openMobileMenu);
-    mobileMenuClose.addEventListener('click', closeMobileMenuFn);
-    mobileMenuOverlay.addEventListener('click', closeMobileMenuFn);
+    if (mobileMenuBtn) mobileMenuBtn.addEventListener('click', openMobileMenu);
+    if (mobileMenuClose) mobileMenuClose.addEventListener('click', closeMobileMenuFn);
+    if (mobileMenuOverlay) mobileMenuOverlay.addEventListener('click', closeMobileMenuFn);
 
     // Close mobile menu when clicking on links
-    mobileMenu.addEventListener('click', (e) => {
-      if (e.target.tagName === 'A') {
-        closeMobileMenuFn();
-      }
+    if (mobileMenu) mobileMenu.addEventListener('click', function(e) {
+      if (e.target.tagName === 'A') closeMobileMenuFn();
     });
 
     // Back to Top Button
@@ -984,7 +987,7 @@
 
     // Search Functionality
     const searchInput = document.querySelector('.search-box');
-    searchInput.addEventListener('keypress', (e) => {
+    if (searchInput) searchInput.addEventListener('keypress', (e) => {
       if (e.key === 'Enter') {
         e.preventDefault();
         // Implement search functionality here}
